@@ -1,0 +1,183 @@
+/* =============================================
+   NOTERA LANDING PAGE - ANIMATIONS
+   ============================================= */
+
+/* ----- Keyframe Animations ----- */
+
+/* Mascot floating effect (replicates app's LogoMascot) */
+@keyframes float {
+    0%, 100% { transform: translateY(-8px); }
+    50% { transform: translateY(8px); }
+}
+
+/* Cloud drift */
+@keyframes drift-right {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+}
+
+@keyframes drift-left {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-20px); }
+}
+
+/* CTA button pulse glow */
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 4px 14px rgba(232, 115, 74, 0.35); }
+    50% { box-shadow: 0 4px 30px rgba(232, 115, 74, 0.55); }
+}
+
+/* Glow pulse behind mascot */
+@keyframes glow-pulse {
+    0%, 100% { opacity: 0.6; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.05); }
+}
+
+/* Step number pop */
+@keyframes pop-in {
+    0% { transform: scale(0); opacity: 0; }
+    70% { transform: scale(1.15); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Train sway */
+@keyframes train-sway {
+    0%, 100% { transform: translateX(-15px); }
+    50% { transform: translateX(15px); }
+}
+
+/* Vehicle bob */
+@keyframes vehicle-bob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+}
+
+/* Audio wave pulse */
+@keyframes wave-pulse {
+    0%, 100% { opacity: 0.3; transform: scaleY(1); }
+    50% { opacity: 0.6; transform: scaleY(1.2); }
+}
+
+/* ----- Apply Continuous Animations ----- */
+
+.hero__mascot {
+    animation: float 3s ease-in-out infinite;
+}
+
+.hero__glow {
+    animation: glow-pulse 3s ease-in-out infinite;
+}
+
+.cloud--1 { animation: drift-right 8s ease-in-out infinite; }
+.cloud--2 { animation: drift-left 10s ease-in-out infinite; }
+.cloud--3 { animation: drift-right 12s ease-in-out infinite; }
+.cloud--4 { animation: drift-left 9s ease-in-out infinite; }
+.cloud--cta-1 { animation: drift-right 7s ease-in-out infinite; }
+.cloud--cta-2 { animation: drift-left 8s ease-in-out infinite; }
+
+.cta__mascot {
+    animation: float 2.8s ease-in-out infinite;
+}
+
+/* Train scene - horizontal run is handled by SVG animateTransform */
+
+/* Commute vehicles */
+.commute-vehicle--bus {
+    animation: vehicle-bob 3s ease-in-out infinite;
+}
+
+.commute-vehicle--metro {
+    animation: vehicle-bob 3.5s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+.commute-vehicle--auto {
+    animation: vehicle-bob 2.8s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.cta .btn--white {
+    animation: pulse-glow 2.5s ease-in-out infinite;
+}
+
+/* Override pulse glow for white button */
+.cta .btn--white {
+    animation-name: pulse-glow-white;
+}
+
+@keyframes pulse-glow-white {
+    0%, 100% { box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15); }
+    50% { box-shadow: 0 4px 30px rgba(255, 255, 255, 0.35); }
+}
+
+/* ----- Scroll Animation Base States ----- */
+
+[data-animate] {
+    opacity: 0;
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-animate="fade-up"] {
+    transform: translateY(30px);
+}
+
+[data-animate="fade-right"] {
+    transform: translateX(-30px);
+}
+
+[data-animate="fade-left"] {
+    transform: translateX(30px);
+}
+
+[data-animate="draw-line"] {
+    /* Handled separately by connector styles */
+    opacity: 1;
+}
+
+/* ----- Scroll Animation Visible States ----- */
+
+[data-animate].is-visible {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+}
+
+/* Step numbers pop when visible */
+.step.is-visible .step__number {
+    animation: pop-in 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Feature card stagger delays (set by JS, these are fallbacks) */
+.feature-card:nth-child(1) { transition-delay: 0ms; }
+.feature-card:nth-child(2) { transition-delay: 80ms; }
+.feature-card:nth-child(3) { transition-delay: 160ms; }
+.feature-card:nth-child(4) { transition-delay: 240ms; }
+.feature-card:nth-child(5) { transition-delay: 320ms; }
+.feature-card:nth-child(6) { transition-delay: 400ms; }
+
+/* Privacy card stagger */
+.privacy-card:nth-child(1) { transition-delay: 0ms; }
+.privacy-card:nth-child(2) { transition-delay: 100ms; }
+.privacy-card:nth-child(3) { transition-delay: 200ms; }
+
+/* Use case card stagger */
+.use-case-card:nth-child(1) { transition-delay: 0ms; }
+.use-case-card:nth-child(2) { transition-delay: 120ms; }
+.use-case-card:nth-child(3) { transition-delay: 240ms; }
+
+/* ----- Accessibility: Reduce Motion ----- */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    [data-animate] {
+        opacity: 1;
+        transform: none;
+    }
+}

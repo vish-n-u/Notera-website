@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notera - Smart Audio Transcription & Note-Taking App for Android</title>
+    <meta name="description" content="Capture audio from any app on your Android phone and transcribe it instantly with AI. Record, transcribe, summarize, and organize your notes with Notera.">
+    <meta name="keywords" content="audio transcription app, note taking app, AI transcription, Android recording app, speech to text, floating window recorder, audio notes, commute notes">
+    <meta name="author" content="Notera">
+    <meta name="theme-color" content="#E8734A">
+    <link rel="canonical" href="https://notera.app/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Notera - Smart Audio Transcription & Note-Taking App">
+    <meta property="og:description" content="Capture audio from any app, transcribe with AI, and organize your notes in one place.">
+    <meta property="og:image" content="assets/images/og-image.png">
+    <meta property="og:url" content="https://notera.app/">
+    <meta property="og:site_name" content="Notera">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Notera - Smart Audio Transcription & Note-Taking App">
+    <meta name="twitter:description" content="Capture audio from any app, transcribe with AI, and organize your notes.">
+    <meta name="twitter:image" content="assets/images/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/app-logo.png">
+    <link rel="apple-touch-icon" href="assets/images/app-logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Notera",
+        "operatingSystem": "Android",
+        "applicationCategory": "UtilitiesApplication",
+        "description": "Smart audio transcription and note-taking app for Android. Capture audio from any app, transcribe with AI, and organize your notes.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Notera",
+        "url": "https://notera.app/",
+        "logo": "assets/images/app-logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "ridescribenotes@gmail.com",
+            "contactType": "customer support"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- ===================== NAVIGATION ===================== -->
+    <nav class="nav" id="navbar">
+        <div class="container nav__inner">
+            <a href="#" class="nav__brand">
+                <img src="assets/images/app-logo.png" alt="Notera logo" class="nav__logo" width="40" height="40">
+                <span class="nav__wordmark">Notera</span>
+            </a>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="#features" class="nav__link">Features</a></li>
+                <li><a href="#how-it-works" class="nav__link">How It Works</a></li>
+                <li><a href="#privacy" class="nav__link">Privacy</a></li>
+                <li><a href="#download" class="nav__link nav__link--cta">Download</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ===================== HERO ===================== -->
+        <section id="hero" class="hero">
+            <div class="hero__clouds">
+                <div class="cloud cloud--1"></div>
+                <div class="cloud cloud--2"></div>
+                <div class="cloud cloud--3"></div>
+                <div class="cloud cloud--4"></div>
+            </div>
+            <div class="container hero__inner">
+                <div class="hero__content" data-animate="fade-right">
+                    <h1 class="hero__title">
+                        Your Voice, Perfectly <span class="text-gradient">Noted</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                        Capture audio from any app on your phone, transcribe it instantly with AI, and organize everything in one place.
+                    </p>
+                    <a href="https://play.google.com/store/apps/details?id=com.myapp.ridescribe" class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+                        <svg class="btn__icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                        </svg>
+                        Download on Google Play
+                    </a>
+                    <p class="hero__badge">Free for Android</p>
+                </div>
+                <div class="hero__visual" data-animate="fade-left">
+                    <div class="hero__mascot-wrapper">
+                        <div class="hero__glow"></div>
+                        <img src="assets/images/app-logo.png" alt="Notera app mascot - a pen with audio waveform bars" class="hero__mascot" width="300" height="300" loading="eager">
+                    </div>
+                </div>
+            </div>
+            <!-- Animated Mumbai local train scene at bottom of hero -->
+            <div class="hero__train-scene" aria-hidden="true">
+                <svg class="train-svg" viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Overhead electric wire -->
+                    <line x1="0" y1="8" x2="1200" y2="8" stroke="#94A3B8" stroke-width="1.5" opacity="0.15"/>
+                    <!-- Wire supports -->
+                    <line x1="200" y1="0" x2="200" y2="30" stroke="#94A3B8" stroke-width="2" opacity="0.12"/>
+                    <line x1="600" y1="0" x2="600" y2="30" stroke="#94A3B8" stroke-width="2" opacity="0.12"/>
+                    <line x1="1000" y1="0" x2="1000" y2="30" stroke="#94A3B8" stroke-width="2" opacity="0.12"/>
+                    <!-- Track -->
+                    <line x1="0" y1="100" x2="1200" y2="100" stroke="#94A3B8" stroke-width="2.5" opacity="0.3"/>
+                    <g opacity="0.25" stroke="#94A3B8" stroke-width="1.5">
+                        <line x1="0" y1="96" x2="0" y2="104"/><line x1="55" y1="96" x2="55" y2="104"/>
+                        <line x1="110" y1="96" x2="110" y2="104"/><line x1="165" y1="96" x2="165" y2="104"/>
+                        <line x1="220" y1="96" x2="220" y2="104"/><line x1="275" y1="96" x2="275" y2="104"/>
+                        <line x1="330" y1="96" x2="330" y2="104"/><line x1="385" y1="96" x2="385" y2="104"/>
+                        <line x1="440" y1="96" x2="440" y2="104"/><line x1="495" y1="96" x2="495" y2="104"/>
+                        <line x1="550" y1="96" x2="550" y2="104"/><line x1="605" y1="96" x2="605" y2="104"/>
+                        <line x1="660" y1="96" x2="660" y2="104"/><line x1="715" y1="96" x2="715" y2="104"/>
+                        <line x1="770" y1="96" x2="770" y2="104"/><line x1="825" y1="96" x2="825" y2="104"/>
+                        <line x1="880" y1="96" x2="880" y2="104"/><line x1="935" y1="96" x2="935" y2="104"/>
+                        <line x1="990" y1="96" x2="990" y2="104"/><line x1="1045" y1="96" x2="1045" y2="104"/>
+                        <line x1="1100" y1="96" x2="1100" y2="104"/><line x1="1155" y1="96" x2="1155" y2="104"/>
+                    </g>
+                    <!-- Mumbai Local Train - runs horizontally -->
+                    <g class="train-group">
+                        <animateTransform attributeName="transform" type="translate"
+                            from="1500,0" to="-1100,0" dur="12s" repeatCount="indefinite"/>
+                        <!-- Boxy body - Mumbai local style (flat, rectangular) -->
+                        <rect x="80" y="28" width="560" height="62" rx="3" fill="#D4D8DC"/>
+                        <!-- Blue horizontal stripe (Western Railway style) -->
+                        <rect x="80" y="28" width="560" height="8" fill="#4A8FD9" opacity="0.7"/>
+                        <rect x="80" y="72" width="560" height="6" fill="#4A8FD9" opacity="0.5"/>
+                        <!-- Pantograph on roof -->
+                        <line x1="350" y1="28" x2="350" y2="14" stroke="#64748B" stroke-width="2" opacity="0.3"/>
+                        <line x1="340" y1="14" x2="360" y2="14" stroke="#64748B" stroke-width="2" opacity="0.3"/>
+                        <line x1="345" y1="14" x2="350" y2="8" stroke="#64748B" stroke-width="1.5" opacity="0.25"/>
+                        <line x1="355" y1="14" x2="350" y2="8" stroke="#64748B" stroke-width="1.5" opacity="0.25"/>
+                        <!-- Windows - smaller, more of them (Mumbai local style) -->
+                        <rect x="100" y="40" width="30" height="16" rx="1" fill="#4A8FD9" opacity="0.2"/>
+                        <rect x="140" y="40" width="30" height="16" rx="1" fill="#4A8FD9" opacity="0.2"/>
+                        <rect x="210" y="40" width="30" height="16" rx="1" fill="#4A8FD9" opacity="0.2"/>
+                        <rect x="250" y="40" width="30" height="16" rx="1" fill="#4A8FD9" opacity="0.2"/>
+                        <rect x="320" y="40" width="30" height="16" rx="1" fill="#4A8FD9" opacity="0.2"/>
+                        <rect x="360" y="40" width="30" height="16" rx="1" fill="#4A8FD9" opacity="0.2"/>
+                        <rect x="430" y="40" width="30" height="16" rx="1" fill="#4A8FD9" opacity="0.2"/>
+                        <rect x="470" y="40" width="30" height="16" rx="1" fill="#4A8FD9" opacity="0.2"/>
+                        <rect x="540" y="40" width="30" height="16" rx="1" fill="#4A8FD9" opacity="0.2"/>
+                        <rect x="580" y="40" width="30" height="16" rx="1" fill="#4A8FD9" opacity="0.2"/>
+                        <!-- Open doors (iconic Mumbai local) -->
+                        <rect x="178" y="38" width="24" height="50" rx="1" fill="#94A3B8" opacity="0.12"/>
+                        <rect x="288" y="38" width="24" height="50" rx="1" fill="#94A3B8" opacity="0.12"/>
+                        <rect x="398" y="38" width="24" height="50" rx="1" fill="#94A3B8" opacity="0.12"/>
+                        <rect x="508" y="38" width="24" height="50" rx="1" fill="#94A3B8" opacity="0.12"/>
+                        <!-- Crowd in windows - heads packed tightly -->
+                        <circle cx="112" cy="46" r="3.5" fill="#64748B" opacity="0.4"/>
+                        <circle cx="122" cy="46" r="3.5" fill="#64748B" opacity="0.35"/>
+                        <circle cx="152" cy="46" r="3.5" fill="#64748B" opacity="0.4"/>
+                        <circle cx="162" cy="46" r="3.5" fill="#64748B" opacity="0.35"/>
+                        <circle cx="222" cy="46" r="3.5" fill="#64748B" opacity="0.4"/>
+                        <circle cx="232" cy="46" r="3.5" fill="#64748B" opacity="0.35"/>
+                        <circle cx="262" cy="46" r="3.5" fill="#64748B" opacity="0.4"/>
+                        <circle cx="272" cy="46" r="3.5" fill="#64748B" opacity="0.35"/>
+                        <circle cx="332" cy="46" r="3.5" fill="#64748B" opacity="0.4"/>
+                        <circle cx="342" cy="46" r="3.5" fill="#64748B" opacity="0.35"/>
+                        <circle cx="372" cy="46" r="3.5" fill="#64748B" opacity="0.4"/>
+                        <circle cx="382" cy="46" r="3.5" fill="#64748B" opacity="0.35"/>
+                        <circle cx="442" cy="46" r="3.5" fill="#64748B" opacity="0.4"/>
+                        <circle cx="452" cy="46" r="3.5" fill="#64748B" opacity="0.35"/>
+                        <circle cx="482" cy="46" r="3.5" fill="#64748B" opacity="0.4"/>
+                        <circle cx="492" cy="46" r="3.5" fill="#64748B" opacity="0.35"/>
+                        <circle cx="552" cy="46" r="3.5" fill="#64748B" opacity="0.4"/>
+                        <circle cx="592" cy="46" r="3.5" fill="#64748B" opacity="0.35"/>
+                        <!-- People hanging at doors -->
+                        <circle cx="186" cy="50" r="4" fill="#4A8FD9" opacity="0.45"/>
+                        <line x1="186" y1="54" x2="186" y2="65" stroke="#4A8FD9" stroke-width="2.5" opacity="0.45"/>
+                        <line x1="186" y1="56" x2="190" y2="42" stroke="#4A8FD9" stroke-width="1.5" opacity="0.3"/>
+                        <circle cx="194" cy="52" r="3.5" fill="#64748B" opacity="0.4"/>
+                        <line x1="194" y1="55.5" x2="194" y2="66" stroke="#64748B" stroke-width="2" opacity="0.35"/>
+                        <circle cx="296" cy="50" r="4" fill="#E8734A" opacity="0.45"/>
+                        <line x1="296" y1="54" x2="296" y2="65" stroke="#E8734A" stroke-width="2.5" opacity="0.45"/>
+                        <line x1="296" y1="56" x2="300" y2="42" stroke="#E8734A" stroke-width="1.5" opacity="0.3"/>
+                        <circle cx="304" cy="51" r="3.5" fill="#64748B" opacity="0.35"/>
+                        <line x1="304" y1="54.5" x2="304" y2="64" stroke="#64748B" stroke-width="2" opacity="0.3"/>
+                        <circle cx="406" cy="50" r="4" fill="#64748B" opacity="0.4"/>
+                        <line x1="406" y1="54" x2="406" y2="66" stroke="#64748B" stroke-width="2.5" opacity="0.4"/>
+                        <line x1="406" y1="55" x2="410" y2="42" stroke="#64748B" stroke-width="1.5" opacity="0.3"/>
+                        <circle cx="414" cy="52" r="3.5" fill="#4A8FD9" opacity="0.4"/>
+                        <line x1="414" y1="55.5" x2="414" y2="65" stroke="#4A8FD9" stroke-width="2" opacity="0.35"/>
+                        <!-- Person with headphones (our user!) - highlighted -->
+                        <circle cx="516" cy="49" r="4.5" fill="#E8734A" opacity="0.6"/>
+                        <line x1="516" y1="53.5" x2="516" y2="65" stroke="#E8734A" stroke-width="3" opacity="0.5"/>
+                        <path d="M509,47 Q509,41.5 516,41.5 Q523,41.5 523,47" fill="none" stroke="#E8734A" stroke-width="2" opacity="0.8"/>
+                        <rect x="519" y="55" width="4" height="7" rx="1" fill="#4A8FD9" opacity="0.5"/>
+                        <!-- Wheels -->
+                        <circle cx="130" cy="96" r="6" fill="#64748B" opacity="0.35"/>
+                        <circle cx="200" cy="96" r="6" fill="#64748B" opacity="0.35"/>
+                        <circle cx="350" cy="96" r="6" fill="#64748B" opacity="0.35"/>
+                        <circle cx="420" cy="96" r="6" fill="#64748B" opacity="0.35"/>
+                        <circle cx="560" cy="96" r="6" fill="#64748B" opacity="0.35"/>
+                        <circle cx="620" cy="96" r="6" fill="#64748B" opacity="0.35"/>
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!-- ===================== COMMUTE BANNER ===================== -->
+        <section class="commute-banner">
+            <div class="container">
+                <div class="commute-banner__inner" data-animate="fade-up">
+                    <div class="commute-banner__vehicles" aria-hidden="true">
+                        <!-- BEST Bus (Mumbai iconic red bus) -->
+                        <svg class="commute-vehicle commute-vehicle--bus" viewBox="0 0 170 105" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Tall boxy body -->
+                            <rect x="8" y="12" width="140" height="68" rx="4" fill="#FFF3EE"/>
+                            <!-- Red top band (BEST signature) -->
+                            <rect x="8" y="12" width="140" height="14" rx="4" fill="#D93B3B" opacity="0.7"/>
+                            <!-- Red bottom band -->
+                            <rect x="8" y="66" width="140" height="14" fill="#D93B3B" opacity="0.55"/>
+                            <!-- "BEST" text area -->
+                            <text x="78" y="23" font-size="7" font-weight="800" fill="white" text-anchor="middle" opacity="0.8">BEST</text>
+                            <!-- Windows - packed with heads -->
+                            <rect x="16" y="30" width="18" height="16" rx="1" fill="#D93B3B" opacity="0.15"/>
+                            <rect x="40" y="30" width="18" height="16" rx="1" fill="#D93B3B" opacity="0.15"/>
+                            <rect x="64" y="30" width="18" height="16" rx="1" fill="#D93B3B" opacity="0.15"/>
+                            <rect x="88" y="30" width="18" height="16" rx="1" fill="#D93B3B" opacity="0.15"/>
+                            <rect x="112" y="30" width="18" height="16" rx="1" fill="#D93B3B" opacity="0.15"/>
+                            <!-- Door -->
+                            <rect x="135" y="28" width="10" height="38" rx="1" fill="#94A3B8" opacity="0.1"/>
+                            <!-- Crowd in windows - 2-3 heads per window -->
+                            <circle cx="22" cy="36" r="3" fill="#64748B" opacity="0.4"/>
+                            <circle cx="30" cy="36" r="3" fill="#64748B" opacity="0.35"/>
+                            <circle cx="46" cy="36" r="3" fill="#64748B" opacity="0.4"/>
+                            <circle cx="54" cy="36" r="3" fill="#64748B" opacity="0.35"/>
+                            <circle cx="70" cy="36" r="3" fill="#64748B" opacity="0.4"/>
+                            <circle cx="78" cy="36" r="3" fill="#64748B" opacity="0.35"/>
+                            <circle cx="94" cy="36" r="3" fill="#64748B" opacity="0.4"/>
+                            <circle cx="102" cy="36" r="3" fill="#64748B" opacity="0.35"/>
+                            <circle cx="118" cy="36" r="3" fill="#64748B" opacity="0.4"/>
+                            <circle cx="126" cy="36" r="3" fill="#64748B" opacity="0.35"/>
+                            <!-- Standing people visible in lower half -->
+                            <circle cx="25" cy="52" r="2.5" fill="#64748B" opacity="0.25"/>
+                            <circle cx="50" cy="52" r="2.5" fill="#64748B" opacity="0.25"/>
+                            <circle cx="75" cy="52" r="2.5" fill="#64748B" opacity="0.25"/>
+                            <circle cx="100" cy="52" r="2.5" fill="#64748B" opacity="0.25"/>
+                            <!-- Person at door with headphones -->
+                            <circle cx="139" cy="38" r="3.5" fill="#E8734A" opacity="0.5"/>
+                            <line x1="139" y1="41.5" x2="139" y2="52" stroke="#E8734A" stroke-width="2.5" opacity="0.45"/>
+                            <path d="M134,36 Q134,32 139,32 Q144,32 144,36" fill="none" stroke="#4A8FD9" stroke-width="1.5" opacity="0.6"/>
+                            <!-- Headlight -->
+                            <circle cx="6" y="55" r="4" fill="#D93B3B" opacity="0.5"/>
+                            <!-- Wheels -->
+                            <circle cx="36" cy="86" r="8" fill="#94A3B8" opacity="0.3"/>
+                            <circle cx="120" cy="86" r="8" fill="#94A3B8" opacity="0.3"/>
+                        </svg>
+                        <!-- Mumbai Local Train -->
+                        <svg class="commute-vehicle commute-vehicle--metro" viewBox="0 0 190 105" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Overhead wire -->
+                            <line x1="0" y1="4" x2="190" y2="4" stroke="#94A3B8" stroke-width="1" opacity="0.15"/>
+                            <line x1="95" y1="0" x2="95" y2="16" stroke="#94A3B8" stroke-width="1.5" opacity="0.15"/>
+                            <!-- Boxy body -->
+                            <rect x="8" y="18" width="172" height="58" rx="3" fill="#D4D8DC"/>
+                            <!-- Blue stripe (Western Rly) -->
+                            <rect x="8" y="18" width="172" height="7" fill="#4A8FD9" opacity="0.6"/>
+                            <rect x="8" y="64" width="172" height="5" fill="#4A8FD9" opacity="0.4"/>
+                            <!-- Windows -->
+                            <rect x="16" y="30" width="18" height="14" rx="1" fill="#4A8FD9" opacity="0.18"/>
+                            <rect x="40" y="30" width="18" height="14" rx="1" fill="#4A8FD9" opacity="0.18"/>
+                            <rect x="80" y="30" width="18" height="14" rx="1" fill="#4A8FD9" opacity="0.18"/>
+                            <rect x="104" y="30" width="18" height="14" rx="1" fill="#4A8FD9" opacity="0.18"/>
+                            <rect x="144" y="30" width="18" height="14" rx="1" fill="#4A8FD9" opacity="0.18"/>
+                            <!-- Open doors -->
+                            <rect x="62" y="27" width="14" height="47" rx="1" fill="#94A3B8" opacity="0.1"/>
+                            <rect x="126" y="27" width="14" height="47" rx="1" fill="#94A3B8" opacity="0.1"/>
+                            <!-- Crowd in windows -->
+                            <circle cx="23" cy="36" r="3" fill="#64748B" opacity="0.4"/>
+                            <circle cx="31" cy="36" r="3" fill="#64748B" opacity="0.35"/>
+                            <circle cx="47" cy="36" r="3" fill="#64748B" opacity="0.4"/>
+                            <circle cx="55" cy="36" r="3" fill="#64748B" opacity="0.35"/>
+                            <circle cx="87" cy="36" r="3" fill="#64748B" opacity="0.4"/>
+                            <circle cx="95" cy="36" r="3" fill="#64748B" opacity="0.35"/>
+                            <circle cx="111" cy="36" r="3" fill="#64748B" opacity="0.4"/>
+                            <circle cx="119" cy="36" r="3" fill="#64748B" opacity="0.35"/>
+                            <circle cx="151" cy="36" r="3" fill="#64748B" opacity="0.4"/>
+                            <circle cx="159" cy="36" r="3" fill="#64748B" opacity="0.35"/>
+                            <!-- People hanging at doors -->
+                            <circle cx="67" cy="38" r="3.5" fill="#4A8FD9" opacity="0.45"/>
+                            <line x1="67" y1="41.5" x2="67" y2="54" stroke="#4A8FD9" stroke-width="2.5" opacity="0.4"/>
+                            <line x1="67" y1="43" x2="70" y2="30" stroke="#4A8FD9" stroke-width="1.2" opacity="0.25"/>
+                            <circle cx="73" cy="40" r="3" fill="#64748B" opacity="0.3"/>
+                            <line x1="73" y1="43" x2="73" y2="53" stroke="#64748B" stroke-width="2" opacity="0.3"/>
+                            <circle cx="131" cy="38" r="3.5" fill="#E8734A" opacity="0.5"/>
+                            <line x1="131" y1="41.5" x2="131" y2="54" stroke="#E8734A" stroke-width="2.5" opacity="0.45"/>
+                            <path d="M126,36 Q126,31 131,31 Q136,31 136,36" fill="none" stroke="#E8734A" stroke-width="1.5" opacity="0.6"/>
+                            <!-- Wheels -->
+                            <circle cx="35" cy="82" r="6" fill="#64748B" opacity="0.3"/>
+                            <circle cx="95" cy="82" r="6" fill="#64748B" opacity="0.3"/>
+                            <circle cx="155" cy="82" r="6" fill="#64748B" opacity="0.3"/>
+                        </svg>
+                        <!-- Auto-rickshaw (green-yellow) -->
+                        <svg class="commute-vehicle commute-vehicle--auto" viewBox="0 0 120 105" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Body with curved top -->
+                            <path d="M20,35 Q20,22 35,18 L75,18 Q90,22 90,35 L90,72 Q90,78 84,78 L26,78 Q20,78 20,72Z" fill="#2D8B4E" opacity="0.3"/>
+                            <!-- Yellow-green canopy -->
+                            <path d="M20,35 Q20,22 35,18 L75,18 Q90,22 90,35 L90,42 L20,42Z" fill="#2D8B4E" opacity="0.45"/>
+                            <!-- Open sides (auto style) -->
+                            <rect x="25" y="42" width="20" height="22" rx="2" fill="#2D8B4E" opacity="0.12"/>
+                            <rect x="55" y="42" width="20" height="22" rx="2" fill="#2D8B4E" opacity="0.12"/>
+                            <!-- Meter area -->
+                            <rect x="92" y="35" width="12" height="20" rx="3" fill="#2D8B4E" opacity="0.2"/>
+                            <!-- Driver -->
+                            <circle cx="97" cy="42" r="3.5" fill="#64748B" opacity="0.4"/>
+                            <line x1="97" y1="45.5" x2="97" y2="54" stroke="#64748B" stroke-width="2" opacity="0.35"/>
+                            <!-- Passenger with phone -->
+                            <circle cx="45" cy="48" r="3.5" fill="#E8734A" opacity="0.45"/>
+                            <line x1="45" y1="51.5" x2="45" y2="60" stroke="#E8734A" stroke-width="2.5" opacity="0.4"/>
+                            <rect x="48" y="52" width="4" height="6" rx="1" fill="#4A8FD9" opacity="0.5"/>
+                            <!-- Squeezed passengers -->
+                            <circle cx="65" cy="48" r="3" fill="#64748B" opacity="0.35"/>
+                            <line x1="65" y1="51" x2="65" y2="59" stroke="#64748B" stroke-width="2" opacity="0.3"/>
+                            <circle cx="55" cy="50" r="2.5" fill="#64748B" opacity="0.3"/>
+                            <!-- Wheels -->
+                            <circle cx="25" cy="86" r="7" fill="#94A3B8" opacity="0.3"/>
+                            <circle cx="85" cy="86" r="7" fill="#94A3B8" opacity="0.3"/>
+                            <!-- Front single wheel -->
+                            <circle cx="100" cy="86" r="5" fill="#94A3B8" opacity="0.25"/>
+                        </svg>
+                    </div>
+                    <div class="commute-banner__text">
+                        <h2 class="commute-banner__title">Perfect for Your Daily Commute</h2>
+                        <p class="commute-banner__desc">On the train, bus, metro, or auto &mdash; capture lectures, meetings, podcasts, and ideas while you're on the move. Notera works in the background so you never miss a word.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== FEATURES ===================== -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header" data-animate="fade-up">
+                    <h2 class="section-title">Everything You Need, Hands Free</h2>
+                    <p class="section-subtitle">Powerful features that work while you focus on what matters</p>
+                </div>
+                <div class="features__grid">
+                    <div class="feature-card" data-animate="fade-up">
+                        <div class="feature-card__icon feature-card__icon--blue">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                                <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Record & Transcribe</h3>
+                        <p class="feature-card__desc">Capture audio from any app &mdash; auto-transcribe and summarize with AI.</p>
+                    </div>
+                    <div class="feature-card" data-animate="fade-up">
+                        <div class="feature-card__icon feature-card__icon--orange">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                                <path d="M19,11H17V9H19M14,11H12V9H14M9,11H7V9H9M22,5V7H20V5H4V14H2V5A2,2 0 0,1 4,3H20A2,2 0 0,1 22,5M6,21H18A2,2 0 0,0 20,19V17H4V19A2,2 0 0,0 6,21M4,15H20V13H4V15Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Floating Window</h3>
+                        <p class="feature-card__desc">Record or take notes while using YouTube, browsers, or any other app.</p>
+                    </div>
+                    <div class="feature-card" data-animate="fade-up">
+                        <div class="feature-card__icon feature-card__icon--orange">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                                <path d="M19,20H5V4H7V7H17V4H19M12,2A1,1 0 0,1 13,3A1,1 0 0,1 12,4A1,1 0 0,1 11,3A1,1 0 0,1 12,2M19,2H14.82C14.4,0.84 13.3,0 12,0C10.7,0 9.6,0.84 9.18,2H5A2,2 0 0,0 3,4V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V4A2,2 0 0,0 19,2Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Quick Capture</h3>
+                        <p class="feature-card__desc">Pop-up clipboard to grab content from any app, or write rich-text notes.</p>
+                    </div>
+                    <div class="feature-card" data-animate="fade-up">
+                        <div class="feature-card__icon feature-card__icon--blue">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                                <path d="M7.5,5.6L5,7L6.4,4.5L5,2L7.5,3.4L10,2L8.6,4.5L10,7L7.5,5.6M19.5,15.4L22,14L20.6,16.5L22,19L19.5,17.6L17,19L18.4,16.5L17,14L19.5,15.4M22,2L20.6,4.5L22,7L19.5,5.6L17,7L18.4,4.5L17,2L19.5,3.4L22,2M13.34,12.78L15.78,10.34L13.66,8.22L11.22,10.66L13.34,12.78M14.37,7.29L16.71,9.63C17.1,10 17.1,10.65 16.71,11.04L5.04,22.71C4.65,23.1 4,23.1 3.63,22.71L1.29,20.37C0.9,20 0.9,19.35 1.29,18.96L12.96,7.29C13.35,6.9 14,6.9 14.37,7.29Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">AI Powered</h3>
+                        <p class="feature-card__desc">Get formatted summaries, LinkedIn posts, and enhanced text in one tap.</p>
+                    </div>
+                    <div class="feature-card" data-animate="fade-up">
+                        <div class="feature-card__icon feature-card__icon--orange">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                                <path d="M17,10.5V7A1,1 0 0,0 16,6H4A1,1 0 0,0 3,7V17A1,1 0 0,0 4,18H16A1,1 0 0,0 17,17V13.5L21,17.5V6.5L17,10.5Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Media Import</h3>
+                        <p class="feature-card__desc">Extract audio from videos and convert to transcribable format.</p>
+                    </div>
+                    <div class="feature-card" data-animate="fade-up">
+                        <div class="feature-card__icon feature-card__icon--blue">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                                <path d="M14.06,9L15,9.94L5.92,19H5V18.08L14.06,9M17.66,3C17.41,3 17.15,3.1 16.96,3.29L15.13,5.12L18.88,8.87L20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18.17,3.09 17.92,3 17.66,3M14.06,6.19L3,17.25V21H6.75L17.81,9.94L14.06,6.19Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Rich Text Editing</h3>
+                        <p class="feature-card__desc">Full note editing with image insertion and formatting support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== HOW IT WORKS ===================== -->
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <div class="section-header" data-animate="fade-up">
+                    <h2 class="section-title">Simple as 1, 2, 3</h2>
+                    <p class="section-subtitle">Get started in seconds</p>
+                </div>
+                <div class="steps">
+                    <div class="step" data-animate="fade-up">
+                        <div class="step__number step__number--orange">1</div>
+                        <div class="step__content">
+                            <h3 class="step__title">Record</h3>
+                            <p class="step__desc">Open Notera, tap record, and capture audio from any app running on your phone.</p>
+                        </div>
+                        <!-- Mini Mumbai local icon -->
+                        <div class="step__scene" aria-hidden="true">
+                            <svg viewBox="0 0 80 40" width="80" height="40" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Mini local train -->
+                                <rect x="3" y="8" width="50" height="22" rx="2" fill="#D4D8DC"/>
+                                <rect x="3" y="8" width="50" height="4" fill="#4A8FD9" opacity="0.5"/>
+                                <rect x="8" y="15" width="8" height="7" rx="1" fill="#4A8FD9" opacity="0.18"/>
+                                <rect x="20" y="15" width="8" height="7" rx="1" fill="#4A8FD9" opacity="0.18"/>
+                                <rect x="38" y="15" width="8" height="7" rx="1" fill="#4A8FD9" opacity="0.18"/>
+                                <!-- Door with person hanging -->
+                                <rect x="30" y="14" width="5" height="16" fill="#94A3B8" opacity="0.1"/>
+                                <circle cx="32" cy="17" r="2" fill="#E8734A" opacity="0.5"/>
+                                <line x1="32" y1="19" x2="32" y2="25" stroke="#E8734A" stroke-width="1.5" opacity="0.4"/>
+                                <!-- Crowd dots -->
+                                <circle cx="11" cy="18" r="1.5" fill="#64748B" opacity="0.35"/>
+                                <circle cx="24" cy="18" r="1.5" fill="#64748B" opacity="0.35"/>
+                                <circle cx="42" cy="18" r="1.5" fill="#64748B" opacity="0.35"/>
+                                <circle cx="16" cy="34" r="3" fill="#94A3B8" opacity="0.2"/>
+                                <circle cx="40" cy="34" r="3" fill="#94A3B8" opacity="0.2"/>
+                                <!-- Audio waves -->
+                                <line x1="60" y1="14" x2="60" y2="28" stroke="#E8734A" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+                                <line x1="65" y1="10" x2="65" y2="32" stroke="#4A8FD9" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+                                <line x1="70" y1="16" x2="70" y2="26" stroke="#E8734A" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="step__connector" data-animate="draw-line"></div>
+                    <div class="step" data-animate="fade-up">
+                        <div class="step__number step__number--blue">2</div>
+                        <div class="step__content">
+                            <h3 class="step__title">Transcribe</h3>
+                            <p class="step__desc">AI automatically transcribes your audio and generates a clean, formatted summary.</p>
+                        </div>
+                        <div class="step__scene" aria-hidden="true">
+                            <svg viewBox="0 0 80 40" width="80" height="40" xmlns="http://www.w3.org/2000/svg">
+                                <!-- AI sparkle -->
+                                <circle cx="40" cy="20" r="16" fill="#EBF3FC"/>
+                                <path d="M35,14 L37,20 L35,26 L40,23 L45,26 L43,20 L45,14 L40,17Z" fill="#4A8FD9" opacity="0.5"/>
+                                <circle cx="40" cy="20" r="3" fill="#4A8FD9" opacity="0.6"/>
+                                <!-- Text lines -->
+                                <line x1="60" y1="12" x2="76" y2="12" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+                                <line x1="60" y1="20" x2="72" y2="20" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+                                <line x1="60" y1="28" x2="74" y2="28" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="step__connector" data-animate="draw-line"></div>
+                    <div class="step" data-animate="fade-up">
+                        <div class="step__number step__number--orange">3</div>
+                        <div class="step__content">
+                            <h3 class="step__title">Organize</h3>
+                            <p class="step__desc">Edit, format, and organize your notes with rich text tools. Everything stays on your device.</p>
+                        </div>
+                        <div class="step__scene" aria-hidden="true">
+                            <svg viewBox="0 0 80 40" width="80" height="40" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Folder/notes -->
+                                <rect x="10" y="6" width="30" height="28" rx="4" fill="#FFF3EE" stroke="#E8734A" stroke-width="1" opacity="0.6"/>
+                                <line x1="16" y1="14" x2="34" y2="14" stroke="#E8734A" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+                                <line x1="16" y1="20" x2="30" y2="20" stroke="#E8734A" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+                                <line x1="16" y1="26" x2="32" y2="26" stroke="#E8734A" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+                                <rect x="44" y="10" width="30" height="24" rx="4" fill="#EBF3FC" stroke="#4A8FD9" stroke-width="1" opacity="0.6"/>
+                                <line x1="50" y1="18" x2="68" y2="18" stroke="#4A8FD9" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+                                <line x1="50" y1="24" x2="64" y2="24" stroke="#4A8FD9" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+                                <!-- Check -->
+                                <circle cx="68" cy="10" r="6" fill="#4A8FD9" opacity="0.6"/>
+                                <path d="M64,10 L67,13 L72,7" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== USE CASES / COMMUTE SCENE ===================== -->
+        <section class="use-cases">
+            <div class="container">
+                <div class="section-header" data-animate="fade-up">
+                    <h2 class="section-title">Use It Anywhere, Anytime</h2>
+                    <p class="section-subtitle">Whether you're commuting, studying, or in a meeting</p>
+                </div>
+                <div class="use-cases__grid">
+                    <div class="use-case-card" data-animate="fade-up">
+                        <div class="use-case-card__illustration" aria-hidden="true">
+                            <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Overhead wire -->
+                                <line x1="0" y1="8" x2="220" y2="8" stroke="#94A3B8" stroke-width="1" opacity="0.12"/>
+                                <line x1="110" y1="2" x2="110" y2="22" stroke="#94A3B8" stroke-width="1.5" opacity="0.12"/>
+                                <!-- Mumbai Local - boxy flat body -->
+                                <rect x="10" y="28" width="185" height="62" rx="3" fill="#D4D8DC"/>
+                                <!-- Blue stripe (Western Railway) -->
+                                <rect x="10" y="28" width="185" height="8" fill="#4A8FD9" opacity="0.6"/>
+                                <rect x="10" y="78" width="185" height="5" fill="#4A8FD9" opacity="0.4"/>
+                                <!-- Windows -->
+                                <rect x="20" y="40" width="22" height="16" rx="1" fill="#4A8FD9" opacity="0.18"/>
+                                <rect x="50" y="40" width="22" height="16" rx="1" fill="#4A8FD9" opacity="0.18"/>
+                                <rect x="96" y="40" width="22" height="16" rx="1" fill="#4A8FD9" opacity="0.18"/>
+                                <rect x="126" y="40" width="22" height="16" rx="1" fill="#4A8FD9" opacity="0.18"/>
+                                <rect x="168" y="40" width="22" height="16" rx="1" fill="#4A8FD9" opacity="0.18"/>
+                                <!-- Open doors -->
+                                <rect x="76" y="37" width="16" height="50" rx="1" fill="#94A3B8" opacity="0.1"/>
+                                <rect x="152" y="37" width="12" height="50" rx="1" fill="#94A3B8" opacity="0.1"/>
+                                <!-- Crowd - packed heads in every window -->
+                                <circle cx="28" cy="47" r="3.5" fill="#64748B" opacity="0.4"/>
+                                <circle cx="37" cy="47" r="3.5" fill="#64748B" opacity="0.35"/>
+                                <circle cx="57" cy="47" r="3.5" fill="#64748B" opacity="0.4"/>
+                                <circle cx="66" cy="47" r="3.5" fill="#64748B" opacity="0.35"/>
+                                <circle cx="103" cy="47" r="3.5" fill="#64748B" opacity="0.4"/>
+                                <circle cx="112" cy="47" r="3.5" fill="#64748B" opacity="0.35"/>
+                                <circle cx="133" cy="47" r="3.5" fill="#64748B" opacity="0.4"/>
+                                <circle cx="142" cy="47" r="3.5" fill="#64748B" opacity="0.35"/>
+                                <circle cx="175" cy="47" r="3.5" fill="#64748B" opacity="0.4"/>
+                                <circle cx="184" cy="47" r="3.5" fill="#64748B" opacity="0.35"/>
+                                <!-- Standing crowd visible below windows -->
+                                <circle cx="30" cy="64" r="2.5" fill="#64748B" opacity="0.2"/>
+                                <circle cx="60" cy="64" r="2.5" fill="#64748B" opacity="0.2"/>
+                                <circle cx="105" cy="64" r="2.5" fill="#64748B" opacity="0.2"/>
+                                <circle cx="135" cy="64" r="2.5" fill="#64748B" opacity="0.2"/>
+                                <!-- People hanging at door with headphones (our user!) -->
+                                <circle cx="82" cy="46" r="4.5" fill="#E8734A" opacity="0.55"/>
+                                <line x1="82" y1="50.5" x2="82" y2="64" stroke="#E8734A" stroke-width="3" opacity="0.45"/>
+                                <path d="M76,44 Q76,38.5 82,38.5 Q88,38.5 88,44" fill="none" stroke="#E8734A" stroke-width="2" opacity="0.75"/>
+                                <line x1="82" y1="52" x2="86" y2="38" stroke="#E8734A" stroke-width="1.5" opacity="0.3"/>
+                                <!-- More people at door -->
+                                <circle cx="90" cy="48" r="3.5" fill="#64748B" opacity="0.35"/>
+                                <line x1="90" y1="51.5" x2="90" y2="62" stroke="#64748B" stroke-width="2" opacity="0.3"/>
+                                <circle cx="156" cy="47" r="3.5" fill="#64748B" opacity="0.35"/>
+                                <line x1="156" y1="50.5" x2="156" y2="62" stroke="#64748B" stroke-width="2" opacity="0.3"/>
+                                <!-- Audio wave ripples from user -->
+                                <circle cx="82" cy="46" r="10" fill="none" stroke="#E8734A" stroke-width="0.8" opacity="0.3"/>
+                                <circle cx="82" cy="46" r="16" fill="none" stroke="#E8734A" stroke-width="0.6" opacity="0.18"/>
+                                <!-- Track -->
+                                <line x1="0" y1="106" x2="220" y2="106" stroke="#94A3B8" stroke-width="2" opacity="0.25"/>
+                                <!-- Wheels -->
+                                <circle cx="45" cy="100" r="6" fill="#64748B" opacity="0.3"/>
+                                <circle cx="110" cy="100" r="6" fill="#64748B" opacity="0.3"/>
+                                <circle cx="170" cy="100" r="6" fill="#64748B" opacity="0.3"/>
+                            </svg>
+                        </div>
+                        <h3 class="use-case-card__title">On the Local Train</h3>
+                        <p class="use-case-card__desc">Record lectures or podcasts hands-free during your packed daily commute.</p>
+                    </div>
+                    <div class="use-case-card" data-animate="fade-up">
+                        <div class="use-case-card__illustration" aria-hidden="true">
+                            <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
+                                <!-- BEST Bus - tall boxy red -->
+                                <rect x="15" y="22" width="170" height="72" rx="5" fill="#FFF3EE"/>
+                                <!-- Red top band -->
+                                <rect x="15" y="22" width="170" height="16" rx="5" fill="#D93B3B" opacity="0.65"/>
+                                <!-- Red bottom band -->
+                                <rect x="15" y="76" width="170" height="10" fill="#D93B3B" opacity="0.5"/>
+                                <!-- BEST text -->
+                                <text x="100" y="35" font-size="9" font-weight="800" fill="white" text-anchor="middle" opacity="0.8">BEST</text>
+                                <!-- Route number box -->
+                                <rect x="20" y="39" width="16" height="10" rx="2" fill="#D93B3B" opacity="0.3"/>
+                                <text x="28" y="47" font-size="6" font-weight="700" fill="#D93B3B" text-anchor="middle" opacity="0.5">101</text>
+                                <!-- Windows - filled with crowd -->
+                                <rect x="24" y="42" width="24" height="18" rx="2" fill="#D93B3B" opacity="0.12"/>
+                                <rect x="56" y="42" width="24" height="18" rx="2" fill="#D93B3B" opacity="0.12"/>
+                                <rect x="88" y="42" width="24" height="18" rx="2" fill="#D93B3B" opacity="0.12"/>
+                                <rect x="120" y="42" width="24" height="18" rx="2" fill="#D93B3B" opacity="0.12"/>
+                                <rect x="152" y="42" width="24" height="18" rx="2" fill="#D93B3B" opacity="0.12"/>
+                                <!-- Door at back -->
+                                <rect x="157" y="38" width="14" height="38" rx="2" fill="#94A3B8" opacity="0.1"/>
+                                <!-- Crowd in windows - packed heads -->
+                                <circle cx="32" cy="49" r="3.5" fill="#64748B" opacity="0.4"/>
+                                <circle cx="42" cy="49" r="3.5" fill="#64748B" opacity="0.35"/>
+                                <circle cx="64" cy="49" r="3.5" fill="#64748B" opacity="0.4"/>
+                                <circle cx="74" cy="49" r="3.5" fill="#64748B" opacity="0.35"/>
+                                <circle cx="96" cy="49" r="3.5" fill="#64748B" opacity="0.4"/>
+                                <circle cx="106" cy="49" r="3.5" fill="#64748B" opacity="0.35"/>
+                                <circle cx="128" cy="49" r="3.5" fill="#64748B" opacity="0.4"/>
+                                <circle cx="138" cy="49" r="3.5" fill="#64748B" opacity="0.35"/>
+                                <!-- Standing crowd -->
+                                <circle cx="40" cy="66" r="2.5" fill="#64748B" opacity="0.2"/>
+                                <circle cx="70" cy="66" r="2.5" fill="#64748B" opacity="0.2"/>
+                                <circle cx="100" cy="66" r="2.5" fill="#64748B" opacity="0.2"/>
+                                <circle cx="130" cy="66" r="2.5" fill="#64748B" opacity="0.2"/>
+                                <!-- Person at door with phone (our user) -->
+                                <circle cx="162" cy="48" r="4" fill="#E8734A" opacity="0.5"/>
+                                <line x1="162" y1="52" x2="162" y2="65" stroke="#E8734A" stroke-width="2.5" opacity="0.45"/>
+                                <rect x="165" y="54" width="5" height="8" rx="1" fill="#4A8FD9" opacity="0.5"/>
+                                <!-- Note bubble above user -->
+                                <rect x="148" y="20" width="34" height="20" rx="6" fill="#4A8FD9" opacity="0.15"/>
+                                <line x1="154" y1="27" x2="176" y2="27" stroke="#4A8FD9" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+                                <line x1="154" y1="33" x2="170" y2="33" stroke="#4A8FD9" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+                                <!-- Headlight -->
+                                <circle cx="13" cy="60" r="5" fill="#D93B3B" opacity="0.4"/>
+                                <!-- Wheels -->
+                                <circle cx="52" cy="100" r="8" fill="#94A3B8" opacity="0.3"/>
+                                <circle cx="150" cy="100" r="8" fill="#94A3B8" opacity="0.3"/>
+                                <!-- Road -->
+                                <line x1="0" y1="108" x2="220" y2="108" stroke="#94A3B8" stroke-width="2" opacity="0.2"/>
+                            </svg>
+                        </div>
+                        <h3 class="use-case-card__title">On the BEST Bus</h3>
+                        <p class="use-case-card__desc">Jot down ideas with quick capture while navigating the busy city routes.</p>
+                    </div>
+                    <div class="use-case-card" data-animate="fade-up">
+                        <div class="use-case-card__illustration" aria-hidden="true">
+                            <svg viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Desk/meeting scene -->
+                                <rect x="30" y="55" width="140" height="6" rx="2" fill="#94A3B8" opacity="0.2"/>
+                                <!-- Laptop -->
+                                <rect x="55" y="28" width="60" height="28" rx="3" fill="#EBF3FC" stroke="#4A8FD9" stroke-width="1" opacity="0.6"/>
+                                <rect x="60" y="32" width="50" height="20" rx="2" fill="#4A8FD9" opacity="0.12"/>
+                                <rect x="45" y="56" width="80" height="4" rx="2" fill="#94A3B8" opacity="0.25"/>
+                                <!-- Screen content - text lines -->
+                                <line x1="66" y1="38" x2="100" y2="38" stroke="#4A8FD9" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+                                <line x1="66" y1="43" x2="94" y2="43" stroke="#4A8FD9" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+                                <line x1="66" y1="48" x2="98" y2="48" stroke="#4A8FD9" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+                                <!-- Phone with Notera -->
+                                <rect x="140" y="36" width="22" height="36" rx="4" fill="#FFF3EE" stroke="#E8734A" stroke-width="1" opacity="0.6"/>
+                                <circle cx="151" cy="46" r="4" fill="#E8734A" opacity="0.3"/>
+                                <line x1="143" y1="54" x2="159" y2="54" stroke="#E8734A" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+                                <line x1="143" y1="58" x2="155" y2="58" stroke="#E8734A" stroke-width="1" stroke-linecap="round" opacity="0.2"/>
+                                <!-- Recording indicator -->
+                                <circle cx="151" cy="38" r="3" fill="#E8734A" opacity="0.6">
+                                    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="1.5s" repeatCount="indefinite"/>
+                                </circle>
+                                <!-- Audio wave arcs -->
+                                <path d="M130,50 Q135,44 130,38" fill="none" stroke="#E8734A" stroke-width="1" opacity="0.3"/>
+                                <path d="M126,53 Q133,44 126,35" fill="none" stroke="#E8734A" stroke-width="0.8" opacity="0.2"/>
+                                <!-- Person silhouettes -->
+                                <circle cx="42" cy="40" r="5" fill="#94A3B8" opacity="0.2"/>
+                                <line x1="42" y1="45" x2="42" y2="55" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" opacity="0.2"/>
+                            </svg>
+                        </div>
+                        <h3 class="use-case-card__title">In Meetings</h3>
+                        <p class="use-case-card__desc">Let AI take notes while you focus on the conversation. Get summaries instantly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== PRIVACY ===================== -->
+        <section id="privacy" class="privacy">
+            <div class="container">
+                <div class="section-header" data-animate="fade-up">
+                    <h2 class="section-title">Your Privacy, Your Control</h2>
+                    <p class="section-subtitle">Built with privacy at the core</p>
+                </div>
+                <div class="privacy__grid">
+                    <div class="privacy-card" data-animate="fade-up">
+                        <div class="privacy-card__icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                                <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M17.13,17C15.92,18.85 14.11,20.24 12,20.92C9.89,20.24 8.08,18.85 6.87,17C6.53,16.5 6.24,16 6,15.47C6,13.82 8.71,12.47 12,12.47C15.29,12.47 18,13.79 18,15.47C17.76,16 17.47,16.5 17.13,17Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="privacy-card__title">Anonymous by Design</h3>
+                        <p class="privacy-card__desc">No personal information required. We use anonymous authentication &mdash; no emails, no passwords, no tracking.</p>
+                    </div>
+                    <div class="privacy-card" data-animate="fade-up">
+                        <div class="privacy-card__icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                                <path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="privacy-card__title">Audio Deleted Instantly</h3>
+                        <p class="privacy-card__desc">Your audio files are immediately deleted from our servers after transcription is complete. Nothing is stored.</p>
+                    </div>
+                    <div class="privacy-card" data-animate="fade-up">
+                        <div class="privacy-card__icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                                <path d="M2,20H22V16H2M2,4V8H22V4M2,14H22V10H2Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="privacy-card__title">Local Data Only</h3>
+                        <p class="privacy-card__desc">All your notes and transcriptions are stored only on your device. We never maintain backups of your data.</p>
+                    </div>
+                </div>
+                <div class="privacy__link" data-animate="fade-up">
+                    <a href="https://sites.google.com/view/ridescribenotes/home" class="btn btn--outline" target="_blank" rel="noopener">Read Full Privacy Policy</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== DOWNLOAD CTA ===================== -->
+        <section id="download" class="cta">
+            <div class="cta__bg">
+                <div class="cloud cloud--cta-1"></div>
+                <div class="cloud cloud--cta-2"></div>
+            </div>
+            <div class="container cta__inner" data-animate="fade-up">
+                <img src="assets/images/app-logo.png" alt="Notera mascot" class="cta__mascot" width="120" height="120" loading="lazy">
+                <h2 class="cta__title">Ready to Capture Every Idea?</h2>
+                <p class="cta__subtitle">Start recording, importing, or writing &mdash; your notes are waiting.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.myapp.ridescribe" class="btn btn--white btn--lg" target="_blank" rel="noopener">
+                    <svg class="btn__icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                    </svg>
+                    Get Notera on Google Play
+                </a>
+                <p class="cta__free">Free for Android</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <img src="assets/images/app-logo.png" alt="Notera" class="footer__logo" width="36" height="36" loading="lazy">
+                <span class="footer__wordmark">Notera</span>
+                <p class="footer__tagline">Capture audio, transcribe with AI, and organize your notes.</p>
+            </div>
+            <div class="footer__links">
+                <a href="https://sites.google.com/view/ridescribenotes/home" class="footer__link" target="_blank" rel="noopener">Privacy Policy</a>
+                <a href="mailto:ridescribenotes@gmail.com" class="footer__link">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2025 Notera. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
