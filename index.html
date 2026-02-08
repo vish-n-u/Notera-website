@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notera - Smart Audio Transcription & Note-Taking App for Android</title>
-    <meta name="description" content="Capture audio from any app on your Android phone and transcribe it instantly with AI. Record, transcribe, summarize, and organize your notes with Notera.">
-    <meta name="keywords" content="audio transcription app, note taking app, AI transcription, Android recording app, speech to text, floating window recorder, audio notes, commute notes">
+    <title>Notera - Record System Audio, Transcribe with AI & Take Notes on Android</title>
+    <meta name="description" content="Record system audio from other apps on your Android phone and turn it into formatted notes with AI. Transcribe, summarize, screenshot, and organize — all hands-free with Notera.">
+    <meta name="keywords" content="system audio transcription app, note taking app, AI transcription, Android screen audio recorder, internal audio capture, floating window recorder, audio notes, commute notes, media import transcription">
     <meta name="author" content="Notera">
     <meta name="theme-color" content="#E8734A">
     <link rel="canonical" href="https://notera.app/">
@@ -13,7 +13,7 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Notera - Smart Audio Transcription & Note-Taking App">
-    <meta property="og:description" content="Capture audio from any app, transcribe with AI, and organize your notes in one place.">
+    <meta property="og:description" content="Record system audio from other apps, transcribe or summarize with AI, and organize rich notes with screenshots.">
     <meta property="og:image" content="assets/images/og-image.png">
     <meta property="og:url" content="https://notera.app/">
     <meta property="og:site_name" content="Notera">
@@ -21,7 +21,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Notera - Smart Audio Transcription & Note-Taking App">
-    <meta name="twitter:description" content="Capture audio from any app, transcribe with AI, and organize your notes.">
+    <meta name="twitter:description" content="Record system audio from other apps, transcribe or summarize with AI, and organize rich notes with screenshots.">
     <meta name="twitter:image" content="assets/images/og-image.png">
 
     <!-- Favicon -->
@@ -45,7 +45,7 @@
         "name": "Notera",
         "operatingSystem": "Android",
         "applicationCategory": "UtilitiesApplication",
-        "description": "Smart audio transcription and note-taking app for Android. Capture audio from any app, transcribe with AI, and organize your notes.",
+        "description": "Record system audio from other apps on Android, transcribe or summarize with AI, take screenshots, and get well-formatted rich notes.",
         "offers": {
             "@type": "Offer",
             "price": "0",
@@ -102,10 +102,10 @@
             <div class="container hero__inner">
                 <div class="hero__content" data-animate="fade-right">
                     <h1 class="hero__title">
-                        Your Voice, Perfectly <span class="text-gradient">Noted</span>
+                        Every Sound, Perfectly <span class="text-gradient">Noted</span>
                     </h1>
                     <p class="hero__subtitle">
-                        Capture audio from any app on your phone, transcribe it instantly with AI, and organize everything in one place.
+                        Record system audio from other apps, transcribe or summarize with AI, take screenshots, and get perfectly formatted notes &mdash; all hands-free.
                     </p>
                     <a href="https://play.google.com/store/apps/details?id=com.myapp.ridescribe" class="btn btn--primary btn--lg" target="_blank" rel="noopener">
                         <svg class="btn__icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
@@ -149,7 +149,7 @@
                     <!-- Mumbai Local Train - runs horizontally -->
                     <g class="train-group">
                         <animateTransform attributeName="transform" type="translate"
-                            from="1500,0" to="-1100,0" dur="12s" repeatCount="indefinite"/>
+                            from="-800,0" to="1300,0" dur="22s" repeatCount="indefinite"/>
                         <!-- Boxy body - Mumbai local style (flat, rectangular) -->
                         <rect x="80" y="28" width="560" height="62" rx="3" fill="#D4D8DC"/>
                         <!-- Blue horizontal stripe (Western Railway style) -->
@@ -216,15 +216,70 @@
                         <line x1="516" y1="53.5" x2="516" y2="65" stroke="#E8734A" stroke-width="3" opacity="0.5"/>
                         <path d="M509,47 Q509,41.5 516,41.5 Q523,41.5 523,47" fill="none" stroke="#E8734A" stroke-width="2" opacity="0.8"/>
                         <rect x="519" y="55" width="4" height="7" rx="1" fill="#4A8FD9" opacity="0.5"/>
-                        <!-- Wheels -->
+                        <!-- Coach wheels -->
                         <circle cx="130" cy="96" r="6" fill="#64748B" opacity="0.35"/>
                         <circle cx="200" cy="96" r="6" fill="#64748B" opacity="0.35"/>
                         <circle cx="350" cy="96" r="6" fill="#64748B" opacity="0.35"/>
                         <circle cx="420" cy="96" r="6" fill="#64748B" opacity="0.35"/>
                         <circle cx="560" cy="96" r="6" fill="#64748B" opacity="0.35"/>
                         <circle cx="620" cy="96" r="6" fill="#64748B" opacity="0.35"/>
+
+                        <!-- ===== ENGINE / LOCOMOTIVE (leading end) ===== -->
+                        <!-- Engine body - slightly taller, darker than coaches -->
+                        <rect x="640" y="24" width="120" height="66" rx="3" fill="#B8BCC0"/>
+                        <!-- Blue stripe (Western Railway) -->
+                        <rect x="640" y="24" width="120" height="10" rx="3" fill="#4A8FD9" opacity="0.75"/>
+                        <rect x="640" y="72" width="120" height="6" fill="#4A8FD9" opacity="0.55"/>
+                        <!-- Coupling between coach and engine -->
+                        <rect x="636" y="52" width="8" height="12" rx="2" fill="#94A3B8" opacity="0.4"/>
+                        <!-- Front nose/taper -->
+                        <polygon points="760,28 780,38 780,78 760,90" fill="#A8ACB0"/>
+                        <line x1="760" y1="28" x2="760" y2="90" stroke="#94A3B8" stroke-width="1" opacity="0.3"/>
+                        <!-- Yellow warning stripes at front -->
+                        <rect x="762" y="40" width="16" height="3" rx="1" fill="#F5A623" opacity="0.7"/>
+                        <rect x="762" y="48" width="16" height="3" rx="1" fill="#F5A623" opacity="0.7"/>
+                        <rect x="762" y="56" width="16" height="3" rx="1" fill="#F5A623" opacity="0.7"/>
+                        <rect x="762" y="64" width="16" height="3" rx="1" fill="#F5A623" opacity="0.7"/>
+                        <!-- Headlights -->
+                        <circle cx="775" cy="42" r="4" fill="#FFF176" opacity="0.85"/>
+                        <circle cx="775" cy="72" r="4" fill="#FFF176" opacity="0.85"/>
+                        <!-- Headlight glow -->
+                        <circle cx="775" cy="42" r="7" fill="#FFF176" opacity="0.15"/>
+                        <circle cx="775" cy="72" r="7" fill="#FFF176" opacity="0.15"/>
+                        <!-- Driver's windshield -->
+                        <rect x="658" y="34" width="45" height="22" rx="2" fill="#4A8FD9" opacity="0.25"/>
+                        <!-- Driver silhouette -->
+                        <circle cx="680" cy="42" r="4.5" fill="#64748B" opacity="0.5"/>
+                        <line x1="680" y1="46.5" x2="680" y2="54" stroke="#64748B" stroke-width="3" opacity="0.4"/>
+                        <!-- Engine roof pantograph (bigger) -->
+                        <line x1="700" y1="24" x2="700" y2="8" stroke="#64748B" stroke-width="2.5" opacity="0.35"/>
+                        <line x1="686" y1="8" x2="714" y2="8" stroke="#64748B" stroke-width="2.5" opacity="0.35"/>
+                        <line x1="690" y1="8" x2="700" y2="2" stroke="#64748B" stroke-width="2" opacity="0.3"/>
+                        <line x1="710" y1="8" x2="700" y2="2" stroke="#64748B" stroke-width="2" opacity="0.3"/>
+                        <!-- Engine wheels (slightly bigger) -->
+                        <circle cx="680" cy="96" r="7" fill="#64748B" opacity="0.4"/>
+                        <circle cx="745" cy="96" r="7" fill="#64748B" opacity="0.4"/>
                     </g>
                 </svg>
+                <audio id="trainAudio" src="assets/audio/train-sound.mp3" preload="auto"></audio>
+                <div class="train-controls">
+                    <button class="train-ctrl-btn" id="trainSoundBtn" aria-label="Play train sound" title="Play train sound">
+                        <svg class="train-ctrl-icon train-ctrl-icon--mute" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                            <path d="M12,4L9.91,6.09L12,8.18M4.27,3L3,4.27L7.73,9H3V15H7L12,20V13.27L16.25,17.53C15.58,18.04 14.83,18.45 14,18.7V20.77C15.38,20.45 16.63,19.82 17.68,18.96L19.73,21L21,19.73L12,10.73M19,12C19,12.94 18.8,13.82 18.46,14.64L19.97,16.15C20.62,14.91 21,13.5 21,12C21,7.72 18,4.14 14,3.23V5.29C16.89,6.15 19,8.83 19,12M16.5,12C16.5,10.23 15.48,8.71 14,7.97V10.18L16.45,12.63C16.5,12.43 16.5,12.21 16.5,12Z"/>
+                        </svg>
+                        <svg class="train-ctrl-icon train-ctrl-icon--sound" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display:none">
+                            <path d="M3,9V15H7L12,20V4L7,9H3M16.5,12C16.5,10.23 15.48,8.71 14,7.97V16.02C15.48,15.29 16.5,13.77 16.5,12M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.85 14,18.71V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23Z"/>
+                        </svg>
+                    </button>
+                    <button class="train-ctrl-btn" id="trainToggleBtn" aria-label="Pause train" title="Pause train">
+                        <svg class="train-ctrl-icon train-ctrl-icon--pause" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                            <path d="M14,19H18V5H14M6,19H10V5H6V19Z"/>
+                        </svg>
+                        <svg class="train-ctrl-icon train-ctrl-icon--play" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display:none">
+                            <path d="M8,5.14V19.14L19,12.14L8,5.14Z"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
 
@@ -352,7 +407,7 @@
                     </div>
                     <div class="commute-banner__text">
                         <h2 class="commute-banner__title">Perfect for Your Daily Commute</h2>
-                        <p class="commute-banner__desc">On the train, bus, metro, or auto &mdash; capture lectures, meetings, podcasts, and ideas while you're on the move. Notera works in the background so you never miss a word.</p>
+                        <p class="commute-banner__desc">On the train, bus, metro, or auto &mdash; record audio from podcasts, videos, or any app while you travel. When typing is impossible in a crowded commute, let Notera capture and transcribe for you.</p>
                     </div>
                 </div>
             </div>
@@ -365,60 +420,320 @@
                     <h2 class="section-title">Everything You Need, Hands Free</h2>
                     <p class="section-subtitle">Powerful features that work while you focus on what matters</p>
                 </div>
-                <div class="features__grid">
-                    <div class="feature-card" data-animate="fade-up">
-                        <div class="feature-card__icon feature-card__icon--blue">
-                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-                                <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
-                            </svg>
-                        </div>
-                        <h3 class="feature-card__title">Record & Transcribe</h3>
-                        <p class="feature-card__desc">Capture audio from any app &mdash; auto-transcribe and summarize with AI.</p>
+                <div class="features__showcase" data-animate="fade-up">
+                    <!-- Left: Feature tabs -->
+                    <div class="features__tabs">
+                        <button class="feature-tab is-active" data-feature="0">
+                            <span class="feature-tab__number">01</span>
+                            <div class="feature-tab__text">
+                                <h3 class="feature-tab__title">Record System Audio</h3>
+                                <p class="feature-tab__desc">Capture internal audio from other apps. A floating window lets you set a header, subheader, and take screenshots during recording. Choose transcription or summary to get rich formatted notes.</p>
+                            </div>
+                        </button>
+                        <button class="feature-tab" data-feature="1">
+                            <span class="feature-tab__number">02</span>
+                            <div class="feature-tab__text">
+                                <h3 class="feature-tab__title">Floating Overlay</h3>
+                                <p class="feature-tab__desc">A popup overlay to add headers, subheaders, and paste content directly from any website &mdash; without leaving your current app.</p>
+                            </div>
+                        </button>
+                        <button class="feature-tab" data-feature="2">
+                            <span class="feature-tab__number">03</span>
+                            <div class="feature-tab__text">
+                                <h3 class="feature-tab__title">Media Import</h3>
+                                <p class="feature-tab__desc">When an app blocks audio recording, import video or audio files directly and generate formatted notes from them.</p>
+                            </div>
+                        </button>
+                        <button class="feature-tab" data-feature="3">
+                            <span class="feature-tab__number">04</span>
+                            <div class="feature-tab__text">
+                                <h3 class="feature-tab__title">Create & Edit Notes</h3>
+                                <p class="feature-tab__desc">Create your own rich text notes or edit AI-generated ones. Notes include formatted text, embedded screenshots, and the original audio.</p>
+                            </div>
+                        </button>
                     </div>
-                    <div class="feature-card" data-animate="fade-up">
-                        <div class="feature-card__icon feature-card__icon--orange">
-                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-                                <path d="M19,11H17V9H19M14,11H12V9H14M9,11H7V9H9M22,5V7H20V5H4V14H2V5A2,2 0 0,1 4,3H20A2,2 0 0,1 22,5M6,21H18A2,2 0 0,0 20,19V17H4V19A2,2 0 0,0 6,21M4,15H20V13H4V15Z"/>
-                            </svg>
+
+                    <!-- Right: Phone with carousel -->
+                    <div class="features__phone">
+                        <div class="phone-frame">
+                            <!-- Feature 0: Record System Audio (animated SVG mockups) -->
+                            <div class="phone-carousel is-active" data-feature="0">
+                                <div class="phone-carousel__track">
+                                    <!-- Slide 1: Minimized recording bar -->
+                                    <div class="phone-carousel__slide is-active" aria-label="Notera minimized recording bar with red dot, folder and close icons">
+                                        <svg viewBox="0 0 260 560" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                                            <rect width="260" height="560" fill="#0f0f0f"/>
+                                            <!-- Status bar -->
+                                            <text x="18" y="22" font-size="10" fill="white" opacity="0.5" font-family="sans-serif" font-weight="600">07:52</text>
+                                            <rect x="215" y="14" width="22" height="10" rx="2" fill="none" stroke="white" stroke-width="0.8" opacity="0.35"/>
+                                            <rect x="217" y="16" width="16" height="6" rx="1" fill="white" opacity="0.35"/>
+                                            <!-- Video area - warm tinted scene (different from slide 1) -->
+                                            <rect x="0" y="32" width="260" height="310" fill="#1a0a0a"/>
+                                            <rect x="0" y="80" width="260" height="220" fill="#2a1008" opacity="0.5"/>
+                                            <ellipse cx="130" cy="190" rx="90" ry="60" fill="#3a1810" opacity="0.4"/>
+                                            <circle cx="130" cy="170" r="40" fill="#402015" opacity="0.5"/>
+                                            <rect x="95" y="155" width="70" height="90" rx="5" fill="#351510" opacity="0.45"/>
+                                            <!-- Warm store-like bg elements -->
+                                            <rect x="20" y="100" width="40" height="70" rx="3" fill="#4a2010" opacity="0.2"/>
+                                            <rect x="200" y="100" width="40" height="70" rx="3" fill="#4a2010" opacity="0.2"/>
+                                            <!-- ══ NOTERA MINIMIZED BAR ══ -->
+                                            <rect x="8" y="308" width="148" height="42" rx="14" fill="white" opacity="0.85"/>
+                                            <rect x="8" y="308" width="148" height="42" rx="14" fill="#f0f0e8" opacity="0.15"/>
+                                            <!-- Red record button (outlined circle + filled center like screenshot) -->
+                                            <circle cx="34" cy="329" r="9" fill="none" stroke="#E53935" stroke-width="1.5" opacity="0.5"/>
+                                            <circle cx="34" cy="329" r="5.5" fill="#E53935">
+                                                <animate attributeName="opacity" values="1;0.3;1" dur="1.4s" repeatCount="indefinite"/>
+                                            </circle>
+                                            <!-- Copy/layers icon (overlapping rectangles like screenshot) -->
+                                            <g transform="translate(64, 318)">
+                                                <rect x="4" y="0" width="14" height="16" rx="2.5" fill="none" stroke="#555" stroke-width="1.4"/>
+                                                <rect x="0" y="4" width="14" height="16" rx="2.5" fill="#f0f0e8" stroke="#555" stroke-width="1.4"/>
+                                            </g>
+                                            <!-- X close icon -->
+                                            <g transform="translate(104, 322)">
+                                                <line x1="0" y1="0" x2="14" y2="14" stroke="#555" stroke-width="1.8" stroke-linecap="round"/>
+                                                <line x1="14" y1="0" x2="0" y2="14" stroke="#555" stroke-width="1.8" stroke-linecap="round"/>
+                                            </g>
+                                            <!-- YouTube subtitle -->
+                                            <rect x="55" y="370" width="150" height="32" rx="4" fill="black" opacity="0.45"/>
+                                            <text x="130" y="392" text-anchor="middle" font-size="16" font-weight="800" fill="#FFD700" font-family="sans-serif">like to</text>
+                                            <!-- YouTube side icons -->
+                                            <g opacity="0.45" fill="white" font-family="sans-serif">
+                                                <path d="M224,296 L230,290 L236,296 L236,304 L224,304Z" opacity="0.5"/>
+                                                <text x="230" y="314" text-anchor="middle" font-size="7">270k</text>
+                                                <text x="230" y="340" text-anchor="middle" font-size="7">Dislike</text>
+                                                <text x="230" y="368" text-anchor="middle" font-size="7">1,164</text>
+                                                <text x="230" y="396" text-anchor="middle" font-size="7">Share</text>
+                                            </g>
+                                            <!-- Channel area -->
+                                            <circle cx="26" cy="440" r="12" fill="#444" opacity="0.4"/>
+                                            <rect x="46" y="434" width="80" height="8" rx="3" fill="white" opacity="0.2"/>
+                                            <rect x="140" y="432" width="56" height="13" rx="7" fill="white" opacity="0.1" stroke="white" stroke-width="0.5" stroke-opacity="0.15"/>
+                                            <text x="168" y="442" text-anchor="middle" font-size="7" fill="white" opacity="0.3" font-family="sans-serif">Subscribe</text>
+                                            <rect x="16" y="462" width="190" height="7" rx="3" fill="white" opacity="0.12"/>
+                                            <!-- Bottom nav -->
+                                            <rect x="0" y="504" width="260" height="56" fill="#181818"/>
+                                            <line x1="0" y1="504" x2="260" y2="504" stroke="#333" stroke-width="0.5"/>
+                                            <g fill="white" font-family="sans-serif" font-size="6" opacity="0.35" text-anchor="middle">
+                                                <text x="30" y="532">Home</text>
+                                                <text x="82" y="532">Shorts</text>
+                                                <text x="130" y="524" font-size="16" opacity="0.2">+</text>
+                                                <text x="182" y="532">Subs</text>
+                                                <text x="232" y="532">You</text>
+                                            </g>
+                                            <circle cx="246" cy="500" r="3" fill="#E53935">
+                                                <animate attributeName="opacity" values="0.7;0.2;0.7" dur="1.4s" repeatCount="indefinite"/>
+                                            </circle>
+                                        </svg>
+                                    </div>
+
+                                    <!-- Slide 2: Expanded save panel -->
+                                    <div class="phone-carousel__slide" aria-label="Notera save panel with transcript and summary options, header and subtitle fields">
+                                        <svg viewBox="0 0 260 560" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                                            <rect width="260" height="560" fill="#0f0f0f"/>
+                                            <!-- Status bar -->
+                                            <text x="18" y="22" font-size="10" fill="white" opacity="0.5" font-family="sans-serif" font-weight="600">07:53</text>
+                                            <rect x="215" y="14" width="22" height="10" rx="2" fill="none" stroke="white" stroke-width="0.8" opacity="0.35"/>
+                                            <rect x="217" y="16" width="16" height="6" rx="1" fill="white" opacity="0.35"/>
+                                            <!-- Video area - blue scene -->
+                                            <rect x="0" y="32" width="260" height="170" fill="#080818"/>
+                                            <ellipse cx="130" cy="100" rx="100" ry="55" fill="#101030" opacity="0.6"/>
+                                            <circle cx="130" cy="95" r="35" fill="#1a1a42" opacity="0.5"/>
+                                            <rect x="100" y="90" width="60" height="75" rx="4" fill="#15153a" opacity="0.4"/>
+                                            <ellipse cx="130" cy="100" rx="70" ry="40" fill="#4A8FD9" opacity="0.03"/>
+                                            <!-- ══ NOTERA EXPANDED SAVE PANEL ══ -->
+                                            <rect x="8" y="200" width="244" height="310" rx="16" fill="white" opacity="0.93"/>
+                                            <rect x="8" y="200" width="244" height="310" rx="16" fill="#fafaf4" opacity="0.3"/>
+                                            <!-- Top icons row -->
+                                            <!-- Checkmark -->
+                                            <polyline points="24,222 29,228 38,216" fill="none" stroke="#E8734A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <!-- Camera with red indicator -->
+                                            <rect x="52" y="215" width="16" height="13" rx="2" fill="none" stroke="#555" stroke-width="1.4"/>
+                                            <circle cx="60" cy="221" r="3.5" fill="none" stroke="#555" stroke-width="1.2"/>
+                                            <circle cx="66" cy="216" r="2.5" fill="#E53935"/>
+                                            <!-- Pause -->
+                                            <circle cx="90" cy="222" r="11" fill="#E8734A"/>
+                                            <rect x="85" y="216" width="3" height="12" rx="1" fill="white"/>
+                                            <rect x="91" y="216" width="3" height="12" rx="1" fill="white"/>
+                                            <!-- Separator -->
+                                            <line x1="112" y1="212" x2="112" y2="232" stroke="#ddd" stroke-width="1"/>
+                                            <!-- Copy/layers icon (matching screenshot) -->
+                                            <g transform="translate(120, 213)">
+                                                <rect x="4" y="0" width="13" height="14" rx="2" fill="none" stroke="#666" stroke-width="1.3"/>
+                                                <rect x="0" y="4" width="13" height="14" rx="2" fill="#fafaf4" stroke="#666" stroke-width="1.3"/>
+                                            </g>
+                                            <!-- X close -->
+                                            <g transform="translate(152, 215)">
+                                                <line x1="0" y1="0" x2="12" y2="12" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+                                                <line x1="12" y1="0" x2="0" y2="12" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+                                            </g>
+                                            <!-- Green recording strip -->
+                                            <rect x="16" y="242" width="228" height="28" rx="14" fill="#d4edda"/>
+                                            <circle cx="34" cy="256" r="5.5" fill="#E53935">
+                                                <animate attributeName="opacity" values="1;0.25;1" dur="1.4s" repeatCount="indefinite"/>
+                                            </circle>
+                                            <circle cx="34" cy="256" r="9" fill="#E53935" opacity="0">
+                                                <animate attributeName="opacity" values="0.18;0;0.18" dur="1.4s" repeatCount="indefinite"/>
+                                            </circle>
+                                            <text x="50" y="261" font-size="13" font-weight="600" fill="#333" font-family="sans-serif">09:52</text>
+                                            <rect x="156" y="246" width="78" height="20" rx="10" fill="white" opacity="0.75" stroke="#ccc" stroke-width="0.5"/>
+                                            <text x="195" y="260" text-anchor="middle" font-size="10" font-weight="500" fill="#444" font-family="sans-serif">Transcript</text>
+                                            <!-- Save Content As -->
+                                            <text x="24" y="296" font-size="13" font-weight="600" fill="#333" font-family="sans-serif">Save Content As</text>
+                                            <!-- Radio: Transcript (selected) -->
+                                            <circle cx="32" cy="322" r="8" fill="none" stroke="#333" stroke-width="1.5"/>
+                                            <circle cx="32" cy="322" r="4.5" fill="#333"/>
+                                            <text x="48" y="327" font-size="12" font-weight="500" fill="#333" font-family="sans-serif">Transcript</text>
+                                            <!-- Radio: Summary (unselected) -->
+                                            <circle cx="140" cy="322" r="8" fill="none" stroke="#aaa" stroke-width="1.3"/>
+                                            <text x="156" y="327" font-size="12" font-weight="400" fill="#888" font-family="sans-serif">Summary</text>
+                                            <!-- Header field -->
+                                            <rect x="16" y="348" width="228" height="42" rx="8" fill="#f5f5f0" stroke="#e0e0d8" stroke-width="1"/>
+                                            <text x="28" y="374" font-size="13" font-weight="500" fill="#333" font-family="sans-serif">Fuse</text>
+                                            <!-- Subtitle field -->
+                                            <rect x="16" y="400" width="228" height="42" rx="8" fill="#f5f5f0" stroke="#e0e0d8" stroke-width="1"/>
+                                            <text x="28" y="426" font-size="12" fill="#aaa" font-family="sans-serif">Add a sub-title...</text>
+                                            <!-- Up arrow -->
+                                            <polyline points="122,460 130,452 138,460" fill="none" stroke="#aaa" stroke-width="1.5" stroke-linecap="round"/>
+                                            <!-- YouTube side icons -->
+                                            <g opacity="0.4" fill="white" font-family="sans-serif">
+                                                <path d="M224,280 L230,274 L236,280 L236,288 L224,288Z" opacity="0.5"/>
+                                                <text x="230" y="298" text-anchor="middle" font-size="7">270k</text>
+                                                <text x="230" y="326" text-anchor="middle" font-size="7">Dislike</text>
+                                                <text x="230" y="358" text-anchor="middle" font-size="7">1,164</text>
+                                                <text x="230" y="388" text-anchor="middle" font-size="7">Share</text>
+                                            </g>
+                                            <!-- Bottom nav -->
+                                            <rect x="0" y="504" width="260" height="56" fill="#181818"/>
+                                            <line x1="0" y1="504" x2="260" y2="504" stroke="#333" stroke-width="0.5"/>
+                                            <g fill="white" font-family="sans-serif" font-size="6" opacity="0.35" text-anchor="middle">
+                                                <text x="30" y="532">Home</text>
+                                                <text x="82" y="532">Shorts</text>
+                                                <text x="130" y="524" font-size="16" opacity="0.2">+</text>
+                                                <text x="182" y="532">Subs</text>
+                                                <text x="232" y="532">You</text>
+                                            </g>
+                                            <circle cx="246" cy="500" r="3" fill="#E53935">
+                                                <animate attributeName="opacity" values="0.7;0.2;0.7" dur="1.4s" repeatCount="indefinite"/>
+                                            </circle>
+                                        </svg>
+                                    </div>
+
+                                    <!-- Slide 3: Active Recording with expanded bar -->
+                                    <div class="phone-carousel__slide" aria-label="Notera recording bar over YouTube with timer and transcript mode">
+                                        <svg viewBox="0 0 260 560" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                                            <!-- Phone screen bg -->
+                                            <rect width="260" height="560" fill="#0f0f0f"/>
+                                            <!-- Status bar -->
+                                            <text x="18" y="22" font-size="10" fill="white" opacity="0.5" font-family="sans-serif" font-weight="600">07:53</text>
+                                            <rect x="215" y="14" width="22" height="10" rx="2" fill="none" stroke="white" stroke-width="0.8" opacity="0.35"/>
+                                            <rect x="217" y="16" width="16" height="6" rx="1" fill="white" opacity="0.35"/>
+                                            <text x="243" y="22" font-size="8" fill="white" opacity="0.35" font-family="sans-serif">94</text>
+                                            <!-- Video area - blue tinted scene -->
+                                            <rect x="0" y="32" width="260" height="268" fill="#080818"/>
+                                            <ellipse cx="130" cy="150" rx="110" ry="70" fill="#121230" opacity="0.7"/>
+                                            <circle cx="90" cy="138" r="24" fill="#1a1a40" opacity="0.6"/>
+                                            <circle cx="168" cy="132" r="22" fill="#1a1a40" opacity="0.5"/>
+                                            <rect x="68" y="165" width="50" height="75" rx="4" fill="#15153a" opacity="0.5"/>
+                                            <rect x="142" y="158" width="46" height="80" rx="4" fill="#15153a" opacity="0.4"/>
+                                            <ellipse cx="130" cy="160" rx="90" ry="55" fill="#4A8FD9" opacity="0.03"/>
+                                            <!-- YouTube subtitle -->
+                                            <rect x="25" y="255" width="178" height="28" rx="4" fill="black" opacity="0.5"/>
+                                            <text x="114" y="274" text-anchor="middle" font-size="13" font-weight="700" fill="#FFD700" font-family="sans-serif">Huh, interesting</text>
+                                            <!-- ══ NOTERA RECORDING BAR ══ -->
+                                            <rect x="8" y="294" width="204" height="88" rx="14" fill="white" opacity="0.92"/>
+                                            <!-- Top row: checkmark, camera, pause -->
+                                            <polyline points="24,312 29,318 38,306" fill="none" stroke="#E8734A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <rect x="52" y="305" width="16" height="13" rx="2" fill="none" stroke="#555" stroke-width="1.4"/>
+                                            <circle cx="60" cy="311" r="3.5" fill="none" stroke="#555" stroke-width="1.2"/>
+                                            <circle cx="66" cy="307" r="2.5" fill="#E53935"/>
+                                            <circle cx="90" cy="312" r="11" fill="#E8734A"/>
+                                            <rect x="85" y="306" width="3" height="12" rx="1" fill="white"/>
+                                            <rect x="91" y="306" width="3" height="12" rx="1" fill="white"/>
+                                            <!-- Green strip -->
+                                            <rect x="14" y="330" width="192" height="26" rx="13" fill="#d4edda"/>
+                                            <!-- Pulsing red dot -->
+                                            <circle cx="30" cy="343" r="5.5" fill="#E53935">
+                                                <animate attributeName="opacity" values="1;0.25;1" dur="1.4s" repeatCount="indefinite"/>
+                                            </circle>
+                                            <circle cx="30" cy="343" r="9" fill="#E53935" opacity="0">
+                                                <animate attributeName="opacity" values="0.2;0;0.2" dur="1.4s" repeatCount="indefinite"/>
+                                            </circle>
+                                            <text x="44" y="348" font-size="13" font-weight="600" fill="#333" font-family="sans-serif">09:41</text>
+                                            <rect x="122" y="334" width="74" height="20" rx="10" fill="white" opacity="0.75" stroke="#ccc" stroke-width="0.5"/>
+                                            <text x="159" y="348" text-anchor="middle" font-size="10" font-weight="500" fill="#444" font-family="sans-serif">Transcript</text>
+                                            <!-- Down arrow -->
+                                            <polyline points="98,370 106,377 114,370" fill="none" stroke="#aaa" stroke-width="1.5" stroke-linecap="round"/>
+                                            <!-- YouTube side icons -->
+                                            <g opacity="0.45" fill="white" font-family="sans-serif">
+                                                <path d="M224,262 L230,256 L236,262 L236,270 L224,270Z" opacity="0.5"/>
+                                                <text x="230" y="280" text-anchor="middle" font-size="7">270k</text>
+                                                <text x="230" y="306" text-anchor="middle" font-size="7">Dislike</text>
+                                                <text x="230" y="338" text-anchor="middle" font-size="7">1,164</text>
+                                                <text x="230" y="370" text-anchor="middle" font-size="7">Share</text>
+                                            </g>
+                                            <!-- Channel area -->
+                                            <circle cx="26" cy="418" r="12" fill="#444" opacity="0.4"/>
+                                            <rect x="46" y="412" width="80" height="8" rx="3" fill="white" opacity="0.2"/>
+                                            <rect x="140" y="410" width="56" height="13" rx="7" fill="white" opacity="0.1" stroke="white" stroke-width="0.5" stroke-opacity="0.15"/>
+                                            <text x="168" y="420" text-anchor="middle" font-size="7" fill="white" opacity="0.3" font-family="sans-serif">Subscribe</text>
+                                            <rect x="16" y="440" width="190" height="7" rx="3" fill="white" opacity="0.12"/>
+                                            <!-- Bottom nav -->
+                                            <rect x="0" y="504" width="260" height="56" fill="#181818"/>
+                                            <line x1="0" y1="504" x2="260" y2="504" stroke="#333" stroke-width="0.5"/>
+                                            <g fill="white" font-family="sans-serif" font-size="6" opacity="0.35" text-anchor="middle">
+                                                <text x="30" y="532">Home</text>
+                                                <text x="82" y="532">Shorts</text>
+                                                <text x="130" y="524" font-size="16" opacity="0.2">+</text>
+                                                <text x="182" y="532">Subs</text>
+                                                <text x="232" y="532">You</text>
+                                            </g>
+                                            <!-- Notera indicator dot in nav -->
+                                            <circle cx="246" cy="500" r="3" fill="#E53935">
+                                                <animate attributeName="opacity" values="0.7;0.2;0.7" dur="1.4s" repeatCount="indefinite"/>
+                                            </circle>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="phone-carousel__dots">
+                                    <button class="carousel-dot is-active" data-slide="0" aria-label="Slide 1"></button>
+                                    <button class="carousel-dot" data-slide="1" aria-label="Slide 2"></button>
+                                    <button class="carousel-dot" data-slide="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="phone-carousel__labels">
+                                    <span class="carousel-label is-active" data-slide="0">Minimized</span>
+                                    <span class="carousel-label" data-slide="1">Save Panel</span>
+                                    <span class="carousel-label" data-slide="2">Recording</span>
+                                </div>
+                            </div>
+                            <!-- Feature 1: Floating Overlay (placeholder) -->
+                            <div class="phone-carousel" data-feature="1">
+                                <div class="phone-carousel__placeholder">
+                                    <div class="placeholder-icon">
+                                        <svg viewBox="0 0 24 24" width="40" height="40" fill="#E8734A" opacity="0.3"><path d="M19,11H17V9H19M14,11H12V9H14M9,11H7V9H9M22,5V7H20V5H4V14H2V5A2,2 0 0,1 4,3H20A2,2 0 0,1 22,5M6,21H18A2,2 0 0,0 20,19V17H4V19A2,2 0 0,0 6,21M4,15H20V13H4V15Z"/></svg>
+                                    </div>
+                                    <p class="placeholder-text">Screenshots coming soon</p>
+                                </div>
+                            </div>
+                            <!-- Feature 2: Media Import (placeholder) -->
+                            <div class="phone-carousel" data-feature="2">
+                                <div class="phone-carousel__placeholder">
+                                    <div class="placeholder-icon">
+                                        <svg viewBox="0 0 24 24" width="40" height="40" fill="#4A8FD9" opacity="0.3"><path d="M17,10.5V7A1,1 0 0,0 16,6H4A1,1 0 0,0 3,7V17A1,1 0 0,0 4,18H16A1,1 0 0,0 17,17V13.5L21,17.5V6.5L17,10.5Z"/></svg>
+                                    </div>
+                                    <p class="placeholder-text">Screenshots coming soon</p>
+                                </div>
+                            </div>
+                            <!-- Feature 3: Create & Edit (placeholder) -->
+                            <div class="phone-carousel" data-feature="3">
+                                <div class="phone-carousel__placeholder">
+                                    <div class="placeholder-icon">
+                                        <svg viewBox="0 0 24 24" width="40" height="40" fill="#E8734A" opacity="0.3"><path d="M14.06,9L15,9.94L5.92,19H5V18.08L14.06,9M17.66,3C17.41,3 17.15,3.1 16.96,3.29L15.13,5.12L18.88,8.87L20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18.17,3.09 17.92,3 17.66,3M14.06,6.19L3,17.25V21H6.75L17.81,9.94L14.06,6.19Z"/></svg>
+                                    </div>
+                                    <p class="placeholder-text">Screenshots coming soon</p>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="feature-card__title">Floating Window</h3>
-                        <p class="feature-card__desc">Record or take notes while using YouTube, browsers, or any other app.</p>
-                    </div>
-                    <div class="feature-card" data-animate="fade-up">
-                        <div class="feature-card__icon feature-card__icon--orange">
-                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-                                <path d="M19,20H5V4H7V7H17V4H19M12,2A1,1 0 0,1 13,3A1,1 0 0,1 12,4A1,1 0 0,1 11,3A1,1 0 0,1 12,2M19,2H14.82C14.4,0.84 13.3,0 12,0C10.7,0 9.6,0.84 9.18,2H5A2,2 0 0,0 3,4V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V4A2,2 0 0,0 19,2Z"/>
-                            </svg>
-                        </div>
-                        <h3 class="feature-card__title">Quick Capture</h3>
-                        <p class="feature-card__desc">Pop-up clipboard to grab content from any app, or write rich-text notes.</p>
-                    </div>
-                    <div class="feature-card" data-animate="fade-up">
-                        <div class="feature-card__icon feature-card__icon--blue">
-                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-                                <path d="M7.5,5.6L5,7L6.4,4.5L5,2L7.5,3.4L10,2L8.6,4.5L10,7L7.5,5.6M19.5,15.4L22,14L20.6,16.5L22,19L19.5,17.6L17,19L18.4,16.5L17,14L19.5,15.4M22,2L20.6,4.5L22,7L19.5,5.6L17,7L18.4,4.5L17,2L19.5,3.4L22,2M13.34,12.78L15.78,10.34L13.66,8.22L11.22,10.66L13.34,12.78M14.37,7.29L16.71,9.63C17.1,10 17.1,10.65 16.71,11.04L5.04,22.71C4.65,23.1 4,23.1 3.63,22.71L1.29,20.37C0.9,20 0.9,19.35 1.29,18.96L12.96,7.29C13.35,6.9 14,6.9 14.37,7.29Z"/>
-                            </svg>
-                        </div>
-                        <h3 class="feature-card__title">AI Powered</h3>
-                        <p class="feature-card__desc">Get formatted summaries, LinkedIn posts, and enhanced text in one tap.</p>
-                    </div>
-                    <div class="feature-card" data-animate="fade-up">
-                        <div class="feature-card__icon feature-card__icon--orange">
-                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-                                <path d="M17,10.5V7A1,1 0 0,0 16,6H4A1,1 0 0,0 3,7V17A1,1 0 0,0 4,18H16A1,1 0 0,0 17,17V13.5L21,17.5V6.5L17,10.5Z"/>
-                            </svg>
-                        </div>
-                        <h3 class="feature-card__title">Media Import</h3>
-                        <p class="feature-card__desc">Extract audio from videos and convert to transcribable format.</p>
-                    </div>
-                    <div class="feature-card" data-animate="fade-up">
-                        <div class="feature-card__icon feature-card__icon--blue">
-                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-                                <path d="M14.06,9L15,9.94L5.92,19H5V18.08L14.06,9M17.66,3C17.41,3 17.15,3.1 16.96,3.29L15.13,5.12L18.88,8.87L20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18.17,3.09 17.92,3 17.66,3M14.06,6.19L3,17.25V21H6.75L17.81,9.94L14.06,6.19Z"/>
-                            </svg>
-                        </div>
-                        <h3 class="feature-card__title">Rich Text Editing</h3>
-                        <p class="feature-card__desc">Full note editing with image insertion and formatting support.</p>
                     </div>
                 </div>
             </div>
@@ -436,7 +751,7 @@
                         <div class="step__number step__number--orange">1</div>
                         <div class="step__content">
                             <h3 class="step__title">Record</h3>
-                            <p class="step__desc">Open Notera, tap record, and capture audio from any app running on your phone.</p>
+                            <p class="step__desc">Tap record and a floating window appears. Set your header and subheader, then Notera captures system audio from other apps in the background. Take screenshots anytime.</p>
                         </div>
                         <!-- Mini Mumbai local icon -->
                         <div class="step__scene" aria-hidden="true">
@@ -469,7 +784,7 @@
                         <div class="step__number step__number--blue">2</div>
                         <div class="step__content">
                             <h3 class="step__title">Transcribe</h3>
-                            <p class="step__desc">AI automatically transcribes your audio and generates a clean, formatted summary.</p>
+                            <p class="step__desc">Choose transcription or summary. AI creates well-formatted rich text with your screenshots placed exactly where you took them.</p>
                         </div>
                         <div class="step__scene" aria-hidden="true">
                             <svg viewBox="0 0 80 40" width="80" height="40" xmlns="http://www.w3.org/2000/svg">
@@ -488,8 +803,8 @@
                     <div class="step" data-animate="fade-up">
                         <div class="step__number step__number--orange">3</div>
                         <div class="step__content">
-                            <h3 class="step__title">Organize</h3>
-                            <p class="step__desc">Edit, format, and organize your notes with rich text tools. Everything stays on your device.</p>
+                            <h3 class="step__title">Your Note is Ready</h3>
+                            <p class="step__desc">Your note contains rich formatted text, embedded screenshots, and the original audio &mdash; all organized under your chosen header. Everything stays on your device.</p>
                         </div>
                         <div class="step__scene" aria-hidden="true">
                             <svg viewBox="0 0 80 40" width="80" height="40" xmlns="http://www.w3.org/2000/svg">
@@ -516,7 +831,7 @@
             <div class="container">
                 <div class="section-header" data-animate="fade-up">
                     <h2 class="section-title">Use It Anywhere, Anytime</h2>
-                    <p class="section-subtitle">Whether you're commuting, studying, or in a meeting</p>
+                    <p class="section-subtitle">Whether you're on a crowded commute, watching a lecture, or browsing the web</p>
                 </div>
                 <div class="use-cases__grid">
                     <div class="use-case-card" data-animate="fade-up">
@@ -577,7 +892,7 @@
                             </svg>
                         </div>
                         <h3 class="use-case-card__title">On the Local Train</h3>
-                        <p class="use-case-card__desc">Record lectures or podcasts hands-free during your packed daily commute.</p>
+                        <p class="use-case-card__desc">Record audio from podcasts or videos on your phone while you commute. When typing is impossible in the crowd, let Notera capture and transcribe for you.</p>
                     </div>
                     <div class="use-case-card" data-animate="fade-up">
                         <div class="use-case-card__illustration" aria-hidden="true">
@@ -633,40 +948,55 @@
                             </svg>
                         </div>
                         <h3 class="use-case-card__title">On the BEST Bus</h3>
-                        <p class="use-case-card__desc">Jot down ideas with quick capture while navigating the busy city routes.</p>
+                        <p class="use-case-card__desc">Use the floating overlay to paste content from websites or quickly capture ideas on the go &mdash; no need to type in a packed bus.</p>
                     </div>
                     <div class="use-case-card" data-animate="fade-up">
                         <div class="use-case-card__illustration" aria-hidden="true">
                             <svg viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg">
-                                <!-- Desk/meeting scene -->
-                                <rect x="30" y="55" width="140" height="6" rx="2" fill="#94A3B8" opacity="0.2"/>
-                                <!-- Laptop -->
-                                <rect x="55" y="28" width="60" height="28" rx="3" fill="#EBF3FC" stroke="#4A8FD9" stroke-width="1" opacity="0.6"/>
-                                <rect x="60" y="32" width="50" height="20" rx="2" fill="#4A8FD9" opacity="0.12"/>
-                                <rect x="45" y="56" width="80" height="4" rx="2" fill="#94A3B8" opacity="0.25"/>
-                                <!-- Screen content - text lines -->
-                                <line x1="66" y1="38" x2="100" y2="38" stroke="#4A8FD9" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
-                                <line x1="66" y1="43" x2="94" y2="43" stroke="#4A8FD9" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
-                                <line x1="66" y1="48" x2="98" y2="48" stroke="#4A8FD9" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
-                                <!-- Phone with Notera -->
-                                <rect x="140" y="36" width="22" height="36" rx="4" fill="#FFF3EE" stroke="#E8734A" stroke-width="1" opacity="0.6"/>
-                                <circle cx="151" cy="46" r="4" fill="#E8734A" opacity="0.3"/>
-                                <line x1="143" y1="54" x2="159" y2="54" stroke="#E8734A" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
-                                <line x1="143" y1="58" x2="155" y2="58" stroke="#E8734A" stroke-width="1" stroke-linecap="round" opacity="0.2"/>
-                                <!-- Recording indicator -->
-                                <circle cx="151" cy="38" r="3" fill="#E8734A" opacity="0.6">
+                                <!-- Phone screen showing a video -->
+                                <rect x="40" y="10" width="80" height="110" rx="8" fill="#1E293B" opacity="0.08"/>
+                                <rect x="44" y="18" width="72" height="94" rx="4" fill="white" opacity="0.6"/>
+                                <!-- Video playing area -->
+                                <rect x="48" y="22" width="64" height="38" rx="3" fill="#4A8FD9" opacity="0.15"/>
+                                <!-- Play triangle inside video -->
+                                <polygon points="72,34 72,50 86,42" fill="#4A8FD9" opacity="0.3"/>
+                                <!-- Video progress bar -->
+                                <rect x="48" y="64" width="64" height="3" rx="1.5" fill="#94A3B8" opacity="0.15"/>
+                                <rect x="48" y="64" width="30" height="3" rx="1.5" fill="#E8734A" opacity="0.4"/>
+                                <!-- Notera floating window overlay -->
+                                <rect x="52" y="72" width="56" height="34" rx="4" fill="#FFF3EE" stroke="#E8734A" stroke-width="0.8" opacity="0.8"/>
+                                <!-- Header field in floating window -->
+                                <rect x="56" y="76" width="48" height="6" rx="2" fill="#E8734A" opacity="0.12"/>
+                                <line x1="58" y1="79" x2="80" y2="79" stroke="#E8734A" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+                                <!-- Subheader field -->
+                                <rect x="56" y="85" width="48" height="5" rx="2" fill="#4A8FD9" opacity="0.1"/>
+                                <line x1="58" y1="87.5" x2="74" y2="87.5" stroke="#4A8FD9" stroke-width="1" stroke-linecap="round" opacity="0.25"/>
+                                <!-- Screenshot button -->
+                                <rect x="56" y="94" width="20" height="8" rx="3" fill="#4A8FD9" opacity="0.2"/>
+                                <!-- Recording indicator (pulsing red dot) -->
+                                <circle cx="100" y="98" r="3.5" fill="#E8734A" opacity="0.6">
                                     <animate attributeName="opacity" values="0.6;0.2;0.6" dur="1.5s" repeatCount="indefinite"/>
                                 </circle>
-                                <!-- Audio wave arcs -->
-                                <path d="M130,50 Q135,44 130,38" fill="none" stroke="#E8734A" stroke-width="1" opacity="0.3"/>
-                                <path d="M126,53 Q133,44 126,35" fill="none" stroke="#E8734A" stroke-width="0.8" opacity="0.2"/>
-                                <!-- Person silhouettes -->
-                                <circle cx="42" cy="40" r="5" fill="#94A3B8" opacity="0.2"/>
-                                <line x1="42" y1="45" x2="42" y2="55" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" opacity="0.2"/>
+                                <!-- Generated note preview on the side -->
+                                <rect x="138" y="28" width="50" height="70" rx="5" fill="#EBF3FC" stroke="#4A8FD9" stroke-width="0.8" opacity="0.5"/>
+                                <!-- Note header -->
+                                <line x1="144" y1="38" x2="180" y2="38" stroke="#4A8FD9" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+                                <!-- Text lines -->
+                                <line x1="144" y1="46" x2="176" y2="46" stroke="#94A3B8" stroke-width="1.2" stroke-linecap="round" opacity="0.25"/>
+                                <line x1="144" y1="51" x2="172" y2="51" stroke="#94A3B8" stroke-width="1.2" stroke-linecap="round" opacity="0.25"/>
+                                <!-- Screenshot thumbnail in note -->
+                                <rect x="144" y="56" width="24" height="14" rx="2" fill="#4A8FD9" opacity="0.12"/>
+                                <!-- More text after screenshot -->
+                                <line x1="144" y1="76" x2="178" y2="76" stroke="#94A3B8" stroke-width="1.2" stroke-linecap="round" opacity="0.25"/>
+                                <line x1="144" y1="81" x2="170" y2="81" stroke="#94A3B8" stroke-width="1.2" stroke-linecap="round" opacity="0.25"/>
+                                <!-- Audio icon -->
+                                <circle cx="150" cy="90" r="4" fill="#E8734A" opacity="0.2"/>
+                                <!-- Arrow from phone to note -->
+                                <path d="M124,55 L134,55" fill="none" stroke="#E8734A" stroke-width="1.5" stroke-linecap="round" opacity="0.3" stroke-dasharray="3,2"/>
                             </svg>
                         </div>
-                        <h3 class="use-case-card__title">In Meetings</h3>
-                        <p class="use-case-card__desc">Let AI take notes while you focus on the conversation. Get summaries instantly.</p>
+                        <h3 class="use-case-card__title">Watching Videos</h3>
+                        <p class="use-case-card__desc">Record audio from YouTube, lectures, or tutorials. Take screenshots of key moments and get formatted notes with text and images.</p>
                     </div>
                 </div>
             </div>
@@ -741,7 +1071,7 @@
             <div class="footer__brand">
                 <img src="assets/images/app-logo.png" alt="Notera" class="footer__logo" width="36" height="36" loading="lazy">
                 <span class="footer__wordmark">Notera</span>
-                <p class="footer__tagline">Capture audio, transcribe with AI, and organize your notes.</p>
+                <p class="footer__tagline">Record system audio, transcribe with AI, and create rich formatted notes.</p>
             </div>
             <div class="footer__links">
                 <a href="https://sites.google.com/view/ridescribenotes/home" class="footer__link" target="_blank" rel="noopener">Privacy Policy</a>
